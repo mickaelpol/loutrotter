@@ -1,5 +1,15 @@
 
 body{
+    margin-top:50px;
+    font-family: 'Caviar', sans-serif;
+    color:#A65E35;
+}
+.titre{
     font-family: 'Hamurz', sans-serif;
-    color: red;
+    color:#CFEB00;
+}
+.navbar, .navbar a {
+    font-family: 'Hamurz', sans-serif;
+    color:#A65E35;
+    background: #CFEB00;
 }
