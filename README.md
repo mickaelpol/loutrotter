@@ -1,1 +1,2 @@
 # loutrotter
+**install ? --> npm install**
