@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Hamurz';
+    src: url('assets/font/Hamurz Free Version.otf')format('otf'),
+        url('hamurz/Hamurz Free Version.ttf')format('truetype');
+}
+
+@font-face {
+    font-family: 'assets/font/caviar_dreams';
+    src: url('caviar_dreams/CaviarDreams_Bold.ttf')format('truetype');
+}
