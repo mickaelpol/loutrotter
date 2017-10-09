@@ -3,8 +3,7 @@
     src: url('../font/Hamurz Free Version.otf')format('otf'),
         url('../font/hamurz/Hamurz Free Version.ttf')format('truetype');
 }
-
-@font-face {
-    font-family: 'Caviar';
-    src: url('../font/caviar_dreams/CaviarDreams_Bold.ttf')format('truetype');
+body{
+    font-family: 'Hamurz', sans-serif;
+    color: red;
 }
