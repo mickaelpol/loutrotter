@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'Hamurz';
-    src: url('../font/Hamurz Free Version.otf')format('otf'),
-        url('../font/hamurz/Hamurz Free Version.ttf')format('truetype');
-}
+
 body{
     font-family: 'Hamurz', sans-serif;
     color: red;
