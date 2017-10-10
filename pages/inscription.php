@@ -8,14 +8,13 @@ if (!empty($_POST)) {
     $prenom = htmlspecialchars($_POST['prenom'], ENT_QUOTES);
     $email = htmlspecialchars($_POST['email'], ENT_QUOTES);
     $emailVerif = htmlspecialchars($_POST['emailVerif'], ENT_QUOTES);
-    $pwd = htmlspecialchars($_POST['password'], ENT_QUOTES);
+    $pwd = htmlspecialchars(password_hash($_POST['password'], PASSWORD_DEFAULT));
     $pwdVerif = htmlspecialchars($_POST['passwordVerif'], ENT_QUOTES);
 
     // préparation de la requete a envoyer
     $sql = sprintf("INSERT  INTO uti_utilisateur (uti_mdp, uti_nom, uti_prenom, uti_mail, uti_isadmin, uti_isbanned) 
             VALUES ('%s', '%s', '%s', '%s', 0, 0)", $pwd, $nom, $prenom, $email);
 
-    //  var_dump($sql); die();
     // envoi de la requete
     $envoi = $bdd->query($sql);
 
