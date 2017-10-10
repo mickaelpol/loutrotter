@@ -35,6 +35,11 @@ session_start();
         include('pages/connection.php');
     }
 
+//////////// SI LA VARIABLE SÉTÉ VAUT INSCRIPTION ALORS ON INCLUE LA PAGE INSCRIPTION DANS $CONTENT//////// ///
+    if($p === 'inscription'){
+        include('pages/inscription.php');
+    }
+
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
