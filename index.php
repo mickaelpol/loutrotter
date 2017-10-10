@@ -34,6 +34,16 @@ include("connectionDb/connection.php");
     if($p === 'connection'){
         include('pages/connection.php');
     }
+//////////// SI LA VARIABLE SÉTÉ VAUT AJOUT-ARTICLE ALORS ON INCLUE LA PAGE D'AJOUT ARTICLE DANS $CONTENT//////// ///
+if($p === 'ajout-article'){
+    include('pages/ajoutArticle.php');
+}
+
+//////////// SI LA VARIABLE SÉTÉ VAUT INSCRIPTION ALORS ON INCLUE LA PAGE INSCRIPTION DANS $CONTENT//////// ///
+    if($p === 'inscription'){
+        include('pages/inscription.php');
+    }
+
 //////////// SI LA VARIABLE SÉTÉ VAUT ADDPAYS ALORS ON INCLUE LA PAGE ADDPAYS DANS $CONTENT//////// ///
     if($p=== 'addPays'){
         include('pages/addpays.php');
@@ -42,6 +52,7 @@ include("connectionDb/connection.php");
 if($p=== 'listPays'){
     include('pages/listPays.php');
 }
+
 
 $content = ob_get_clean();
 include('pages/templates/default.php');

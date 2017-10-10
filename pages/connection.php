@@ -1,8 +1,13 @@
-<link rel="stylesheet" href="assets/css/connection.css">
+<?php 
+
+    $email = $_POST['email'];
+    $pwd = $_POST['password'];
+
+?>
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">    
-            <h1 class="animated bounceInLeft text-center titre text-uppercase">Connection</h1>
+        <div class="page-header col-sm-6 col-sm-offset-3">    
+            <h1 class="animated zoomInLeft text-center titre text-uppercase">Connection</h1>
         </div>
     </div>
 </div>
@@ -13,11 +18,11 @@
             <form method="post" role="form">
                 <div class="form-group float-label-control">
                     <label for="email">Email</label>
-                    <input id="email" type="email" class="form-control" placeholder="Email">
+                    <input name="email" id="email" type="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group float-label-control">
                     <label for="password">Password</label>
-                    <input id="password" type="password" class="form-control" placeholder="Password">
+                    <input name="password" id="password" type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-md btn-success pull-right">
