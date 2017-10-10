@@ -18,7 +18,16 @@
                     <div class="col-sm-2">
                         <label for="pays">Pays</label>
                         <select class="form-control" name="country_name" id="pays">
-                            <option value="test">test</option>
+                            <?php 
+                                $reponse = $bdd->query('SELECT * FROM pay_pays ORDER BY pay_nom ASC');
+                                while ($donnees = $reponse->fetch()) 
+                                {
+                            ?>
+                            <option value=<?= $donnees['pay_oid'] ?>><?= $donnees['pay_nom'] ?></option>
+                            <?php 
+                                }
+                                $reponse->closeCursor();
+                            ?>
                         </select>
                     </div>
                 </div>
@@ -44,18 +53,21 @@
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Lien vers video Youtube -->
                     <div class="form-group col-sm-8">
                         <label for="video">Lien de la vidéo Youtube (ex: https://www.youtube.com/watch?v=dQw4w9WgXcQ)</label>
                         <input class="form-control" id="video" type="text" name="article_video">
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Lien vers galerie Instagram -->
                     <div class="form-group col-sm-8">
                         <label for="images">Lien vers la galerie Instagram</label>
                         <input class="form-control" id="images" type="text" name="article_images">
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Bouton de soumission de formulaire -->
                     <div class="col-sm-offset-3 col-sm-3">
                         <input class="btn valider" type="submit" value="Valider">
                     </div>

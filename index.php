@@ -48,7 +48,9 @@ if($p === 'ajout-article'){
     if($p=== 'addPays'){
         include('pages/addpays.php');
     }
-
+    if($p==='traitement-ajout-article'){
+        include('pages/bddAjoutArticle.php');
+    }
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
