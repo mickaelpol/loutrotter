@@ -6,7 +6,7 @@ include('./config/parameters.php');
 
 try {
     // ///CONNECTION A LA DB (SI CONNECTION AVEC MYSQL RETIRER LES ESPACES ET SÉPARÉ PAR DES POINT VIRGULE ) ///
-    $bdd = new PDO("mysql:host=$serverDb;dbname=$nameDb" ,$userDb,$pwdDb);
+    $bdd = new PDO("mysql:host=$serverDb;charset=utf8;dbname=$nameDb" ,$userDb,$pwdDb);
 } 
     // ////// SI UNE ERREUR SURVIENT LE CATCH STOPPE TOUTE REQUETE ET RENVOI UN MESSAGE D'ERREUR //////
 catch (Exception $e) {

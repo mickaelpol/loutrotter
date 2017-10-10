@@ -21,7 +21,7 @@
                 </div>
             </div>
         </form>
-        <li><a href=""><i class="fa fa-user-plus" aria-hidden="true"></i>s'inscrire</a></li>
+        <li><a href="?p=inscription"><i class="fa fa-user-plus" aria-hidden="true"></i>s'inscrire</a></li>
         <li><a href="?p=connection"><span class="glyphicon glyphicon-user"></span> se connecter</a></li>
     </ul>
 </div>
