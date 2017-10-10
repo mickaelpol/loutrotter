@@ -23,6 +23,8 @@ footer{
     margin-top:50px;
     background: #CFEB00;
 }
+
+}
 .valider{
     background: #CFEB00;
 }
@@ -97,3 +99,4 @@ footer{
 50% { opacity: 0; font-size: 0.85em; }
 100% { top: 3em; opacity: 1; }
 }
+
