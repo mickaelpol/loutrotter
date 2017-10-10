@@ -3,6 +3,7 @@ body{
     margin-top:100px;
     font-family: 'Caviar', sans-serif;
     color:#A65E35;
+    
 }
 .titre{
     font-family: 'Hamurz', sans-serif;
@@ -17,11 +18,23 @@ body{
 footer a{
     color:#A65E35;
 }
-
 footer{
-    margin-top: 50px;
+    margin-top:50px;
     background: #CFEB00;
 }
+
+
+.valider{
+    background: #CFEB00;
+}
+.jumbotron{
+   
+    background: #CFEB00;
+}
+.jumbotron a{
+    color:#A65E35;
+}
+
 
 .formulaireCo {
     margin-top: 2%;
@@ -93,3 +106,4 @@ footer{
 50% { opacity: 0; font-size: 0.85em; }
 100% { top: 3em; opacity: 1; }
 }
+
