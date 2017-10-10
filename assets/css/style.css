@@ -1,8 +1,9 @@
 
 body{
-    margin-top:50px;
+    margin-top:100px;
     font-family: 'Caviar', sans-serif;
     color:#A65E35;
+    
 }
 .titre{
     font-family: 'Hamurz', sans-serif;
@@ -18,5 +19,9 @@ footer a{
 }
 
 footer{
+    margin-top:50px;
+    background: #CFEB00;
+}
+.valider{
     background: #CFEB00;
 }
