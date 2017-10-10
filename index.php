@@ -1,6 +1,7 @@
 <?php 
 session_start();
 
+include('connectionDb/connection.php');
 
 ////////////////////////////////////// SI LE $_GET DE P EST SÉTÉ ////////////////////////////////////
     if(isset($_GET['p'])){
