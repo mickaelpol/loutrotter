@@ -5,7 +5,9 @@
             <span class="glyphicon glyphicon-th-list"></a>
     </div>
     <ul class="nav navbar-nav">
-        <li class="active"><a href="?p=accueil">Loutrotter</a></li>
+        <li class="active"><a href="?p=accueil">
+        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>    
+        </a></li>
         <li><a href="">Contact</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
