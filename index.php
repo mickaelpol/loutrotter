@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+include("connectionDb/connection.php");
 
 ////////////////////////////////////// SI LE $_GET DE P EST SÉTÉ ////////////////////////////////////
     if(isset($_GET['p'])){
@@ -34,7 +34,10 @@ session_start();
     if($p === 'connection'){
         include('pages/connection.php');
     }
-
+//////////// SI LA VARIABLE SÉTÉ VAUT ADDPAYS ALORS ON INCLUE LA PAGE ADDPAYS DANS $CONTENT//////// ///
+    if($p=== 'addPays'){
+        include('pages/addpays.php');
+    }
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
