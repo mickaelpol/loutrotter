@@ -17,11 +17,17 @@ body{
 footer a{
     color:#A65E35;
 }
-
 footer{
     margin-top:50px;
     background: #CFEB00;
 }
 .valider{
     background: #CFEB00;
+}
+.jumbotron{
+   
+    background: #CFEB00;
+}
+.jumbotron a{
+    color:#A65E35;
 }

@@ -38,6 +38,10 @@ include("connectionDb/connection.php");
     if($p=== 'addPays'){
         include('pages/addpays.php');
     }
+//////////// SI LA VARIABLE SÉTÉ VAUT ADDPAYS ALORS ON INCLUE LA PAGE ADDPAYS DANS $CONTENT//////// ///
+if($p=== 'listPays'){
+    include('pages/listPays.php');
+}
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
