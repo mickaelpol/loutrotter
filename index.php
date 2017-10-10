@@ -1,6 +1,6 @@
 <?php 
 session_start();
-
+include("connectionDb/connection.php");
 
 ////////////////////////////////////// SI LE $_GET DE P EST SÉTÉ ////////////////////////////////////
     if(isset($_GET['p'])){
@@ -38,6 +38,11 @@ session_start();
 //////////// SI LA VARIABLE SÉTÉ VAUT INSCRIPTION ALORS ON INCLUE LA PAGE INSCRIPTION DANS $CONTENT//////// ///
     if($p === 'inscription'){
         include('pages/inscription.php');
+    }
+
+//////////// SI LA VARIABLE SÉTÉ VAUT ADDPAYS ALORS ON INCLUE LA PAGE ADDPAYS DANS $CONTENT//////// ///
+    if($p=== 'addPays'){
+        include('pages/addpays.php');
     }
 
 
