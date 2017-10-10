@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/police.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- ////////////////////// BALISE TITLE A FINIR DE REMPLIR /////////////////////////// -->
     <title>Loutrotter voyages partage découverte cuisine continent pays avion vol bateau </title> 

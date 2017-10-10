@@ -24,9 +24,14 @@
         include('pages/listeArticles.php');
     }
 
-//////////// SI LA VARIABLE SÉTÉ VAUT CONTACT ALORS ON INCLUE LA PAGE CONTACT DANS $CONTEN//////// ///
+//////////// SI LA VARIABLE SÉTÉ VAUT CONTACT ALORS ON INCLUE LA PAGE CONTACT DANS $CONTENT//////// ///
     if($p === 'contact'){
         include('pages/contact.php');
+    }
+
+//////////// SI LA VARIABLE SÉTÉ VAUT CONNECTION ALORS ON INCLUE LA PAGE CONNECTION DANS $CONTENT//////// ///
+    if($p === 'connection'){
+        include('pages/connection.php');
     }
 
 
