@@ -1,6 +1,6 @@
 
 body{
-    margin-top:50px;
+    margin-top:100px;
     font-family: 'Caviar', sans-serif;
     color:#A65E35;
 }
@@ -19,4 +19,5 @@ footer a{
 
 footer{
     background: #CFEB00;
+    margin-top: 50px;
 }

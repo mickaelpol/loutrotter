@@ -35,6 +35,10 @@ session_start();
         include('pages/connection.php');
     }
 
+//////////// SI LA VARIABLE SÉTÉ VAUT AJOUT-ARTICLE ALORS ON INCLUE LA PAGE D'AJOUT ARTICLE DANS $CONTENT//////// ///
+if($p === 'ajout-article'){
+    include('pages/ajoutArticle.php');
+}
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
