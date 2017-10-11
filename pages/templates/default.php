@@ -26,6 +26,6 @@
 
 <!--////////////////// INCLUDE DU FOOTER AFIN DE PAS LE REPETER SUR CHAQUE PAGES //////////////////-->
     <?php include('footer.php'); ?>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+    
 </body>
 </html>

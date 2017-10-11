@@ -54,11 +54,17 @@ if($p === 'ajout-article'){
     }
 
 //////////// SI LA VARIABLE SÉTÉ VAUT ADDPAYS ALORS ON INCLUE LA PAGE ADDPAYS DANS $CONTENT//////// ///
-if($p=== 'listPays'){
-    include('pages/listPays.php');
-}
+    if($p=== 'listPays'){
+        include('pages/listPays.php');
+    }
+    if($p=== 'admin'){
+        include('pages/admin.php');
+    }
+    if($p=== 'bdd-suppression-article'){
+        include('pages/bddSupressionArticle.php');
+    }
 
-
+    
 
 $content = ob_get_clean();
 include('pages/templates/default.php');
