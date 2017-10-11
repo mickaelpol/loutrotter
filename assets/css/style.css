@@ -25,6 +25,13 @@ footer{
     background: #CFEB00;
 }
 
+strong {
+    font-size: 18px;
+}
+i {
+    font-size: 18px;
+}
+
 .valider{
     background: #CFEB00;
 }

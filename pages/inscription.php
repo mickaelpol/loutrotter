@@ -98,12 +98,16 @@ if (isset($_POST['valid'])) {
                         <input name="password" id="password" type="password" class="form-control" placeholder="Mot de passe">
                         <?= isset($erreur) ? $erreur: '' ?>
                     </div>
+                    <p class="textMdp"></p>
+                    <p class="egalMdp"></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="form-group float-label-control">
                         <label for="passwordVerif">Verification mot de passe</label>
                         <input name="passwordVerif" id="passwordVerif" type="password" class="form-control" placeholder="Verification mot de passe">
                     </div>
+                    <p class="textMdp"></p>
+                    <p class="egalMdp"></p>
                 </div>
                 <div class="col-sm-2 col-sm-offset-9">
                     <div class="form-group">
