@@ -4,7 +4,9 @@
         $name = htmlspecialchars($_POST['name'],ENT_QUOTES);
         $request = sprintf("Insert into pay_pays (pay_nom, pay_con_oid) values ('%s', %d )",$name,$_POST['continent']);
         $bdd->query($request);
-        echo 'succes';        
+        echo 'pays ajouté';        
+    }else{
+        echo 'veuillez renseigner le nom du pays'
     }
 ?>
 
