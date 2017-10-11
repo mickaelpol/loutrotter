@@ -6,7 +6,7 @@
         $bdd->query($request);
         echo 'pays ajouté';        
     }else{
-        echo 'veuillez renseigner le nom du pays'
+        echo 'veuillez renseigner le nom du pays';
     }
 ?>
 

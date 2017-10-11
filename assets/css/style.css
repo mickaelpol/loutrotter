@@ -26,6 +26,10 @@ footer{
 
 .valider{
     background: #CFEB00;
+    color:#A65E35;
+}
+.lien{
+    color: #A6602A;
 }
 .jumbotron{
    
@@ -123,4 +127,8 @@ footer{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.table > thead > tr > th {
+    vertical-align: middle;
 }

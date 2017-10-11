@@ -23,7 +23,7 @@
             </div>
         </div>
         <?php
-        header('refresh:5;url=?p=accueil');
+        header('refresh:3;url=?p=admin');
     }
     catch (Exception $e)
     {
