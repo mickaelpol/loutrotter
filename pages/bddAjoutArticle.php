@@ -12,8 +12,18 @@
     VALUES ("%s","%s", %d, "%s", "%s", "%s", "%s", "%s")',$date, $article_titre, $article_pays, $article_contenu_lieux, $article_contenu_monuments, $article_contenu_culture, $article_video, $article_images);
     try {
         $bdd->query($sql_ajout_article);
-        echo "Article enregistré, retour a l'accueil";
-        header('refresh:3;url=?p=accueil');
+        ?>
+        <h4 class='text-center'>Article enregistré avec succès<h4>
+        <br>
+        <p class='text-center'>redirection en cours<p>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div id="loading" class='loader'></div>
+            </div>
+        </div>
+        <?php
+        header('refresh:5;url=?p=accueil');
     }
     catch (Exception $e)
     {

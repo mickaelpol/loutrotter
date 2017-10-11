@@ -10,7 +10,7 @@ $("#titreArticle").change(function(){
 });
 
 $('#valider').on("click",function(e){
-    if($("#titreArticle").val().length <10 || $("#culture").val().length <10 || $("#lieux").val().length <10 || $("#monuments").val().length <10){
+    if($("#titreArticle").val().length <10 || !($("#culture").val().length >10 || $("#lieux").val().length >10 || $("#monuments").val().length >10) ){
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 'slow');    
         $('#error').text("Veuillez renseigner une des catégories de l'article");
