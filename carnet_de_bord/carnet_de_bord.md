@@ -37,3 +37,38 @@
 6. Page liste des pays (requete)
 
 ---------------------------------
+
+>3 ieme journée : Objectif
+
+1. Verif Php inscription
+2. Veille insertion image 
+4. Creation d'article (verif client)
+
+>Objectif atteint :
+
+1. Verif Php inscription (valide)
+2. Veille insertion image 
+4. Creation d'article (verif client fonctionnelle)
+
+------------------------------------
+>4 ieme journée : objectif
+
+1. Rendre la page inscription fonctionnelle (verif Adresse email unique + utilisateur admin ou pas et s'il est bannis ou pas)
+2. Rendre la page connexion fonctionnelle (verif client serveur)
+3. Linker la page admin avec gestion session 
+4. Edition des articles 
+5. Suppression des articles
+6. Listes des utilisateurs (gestion des ban unban)
+7. Affichage des articles
+
+>Objectif atteint :
+
+1. Page inscription completement fonctionnelle
+2. Page connexion fonctionnelle a 100%
+3. Page admin est linker 
+4. Edition des articles terminé
+5. Page de suppression des article terminée
+6. Liste des utilisateurs et gestion des ban unban fonctionnelle (reste a ajouter une confirmation)
+7. Page d'affichage des articles
+
+-------------------------------------
