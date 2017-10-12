@@ -1,75 +1,33 @@
-(function ($) {
-    $.fn.floatLabels = function (options) {
+$(document).ready(function(){
 
-        // Settings
-        var self = this;
-        var settings = $.extend({}, options);
+	var connection = $('#connection');
+	var email = $('#email');
+	var pwd = $('#password');
+	var textErr = $('#textError');
+	var erreur1 = $('#erreur1');
+	var erreur2 = $('#erreur2');
 
+	// fonction verifiant si l'input n'est pas vide
+	function testInput(input, valeur, emplacement) {
+		if (input.val() === "") {
+			input.parent().addClass("has-error");
+			emplacement.html('<u class="text-danger">Le champ ' + valeur + ' est vide</u>');
+			return true;
+		} else {
+			input.parent().removeClass("has-error").addClass("has-success");
+			emplacement.html('');
+			return false;
+		}
+	}
 
-        // Event Handlers
-        function registerEventHandlers() {
-            self.on('input keyup change', 'input, textarea', function () {
-                actions.swapLabels(this);
-            });
-        }
+	connection.submit(function(e){
 
+		if (testInput(email, "email", erreur1)) {
+			e.preventDefault();
+		}
+		if (testInput(pwd, "mot de passe", erreur2)) {
+			e.preventDefault();
+		}
+	});
 
-        // Actions
-        var actions = {
-            initialize: function() {
-                self.each(function () {
-                    var $this = $(this);
-                    var $label = $this.children('label');
-                    var $field = $this.find('input,textarea').first();
-
-                    if ($this.children().first().is('label')) {
-                        $this.children().first().remove();
-                        $this.append($label);
-                    }
-
-                    var placeholderText = ($field.attr('placeholder') && $field.attr('placeholder') != $label.text()) ? $field.attr('placeholder') : $label.text();
-
-                    $label.data('placeholder-text', placeholderText);
-                    $label.data('original-text', $label.text());
-
-                    if ($field.val() == '') {
-                        $field.addClass('empty')
-                    }
-                });
-            },
-            swapLabels: function (field) {
-                var $field = $(field);
-                var $label = $(field).siblings('label').first();
-                var isEmpty = Boolean($field.val());
-
-                if (isEmpty) {
-                    $field.removeClass('empty');
-                    $label.text($label.data('original-text'));
-                }
-                else {
-                    $field.addClass('empty');
-                    $label.text($label.data('placeholder-text'));
-                }
-            }
-        }
-
-
-        // Initialization
-        function init() {
-            registerEventHandlers();
-
-            actions.initialize();
-            self.each(function () {
-                actions.swapLabels($(this).find('input,textarea').first());
-            });
-        }
-        init();
-
-
-        return this;
-    };
-
-    $(function () {
-        $('.float-label-control').floatLabels();
-    });
-})(jQuery);
+});

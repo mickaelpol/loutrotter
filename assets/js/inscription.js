@@ -19,6 +19,7 @@ $(document).ready(function () {
             return true;
         } else {
             input.parent().removeClass("has-error").addClass("has-success");
+            textErr.html('');
             return false;
         }
     }

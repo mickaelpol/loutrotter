@@ -1,5 +1,9 @@
 <?php 
 
+    if (isset($_SESSION['nom'])) {
+        header("Location: ?p=accueil");
+    }
+
 //  fonction verifiant si la valeurs des inputs n'est pas vide
 function testInput($fichier){
     if(empty($_POST[$fichier]));
@@ -46,7 +50,7 @@ if (isset($_POST['valid'])) {
             // envoi de la requete
             $envoi = $bdd->query($sql);
             $message = '<div class="row"><p class="text-success text-center">L\'inscription à été validé ! cliquez <a href="?p=connection" >ici pour être re diriger directement</a></p></div>';
-            // header('refresh:5;url=?p=connection'); 
+            header('refresh:5;url=?p=connection'); 
         }
         
         
@@ -72,13 +76,13 @@ if (isset($_POST['valid'])) {
     <div class="row">
         <div class="col-sm-12 formulaireCo">
             <form method="post" action="?p=inscription" role="form" id="inscription">
-                <div class="col-sm-4 col-sm-offset-1"  id="erreur1">
+                <div class="col-sm-4 col-sm-offset-1">
                     <div class="form-group float-label-control">
                         <label for="nom">Nom </label>
                         <input name="nom" id="nom" type="text" class="form-control" placeholder="Nom">
                     </div>
                 </div>
-                <div class="col-sm-4 col-sm-offset-2" id="erreur2">
+                <div class="col-sm-4 col-sm-offset-2">
                     <div class="form-group float-label-control">
                         <label for="prenom">prenom</label>
                         <input name="prenom" id="prenom" type="text" class="form-control" placeholder="Prenom">
@@ -128,5 +132,5 @@ if (isset($_POST['valid'])) {
 
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
-<script src="assets/js/connection.js"></script>
+<script src="assets/js/animationForm.js"></script>
 <script src="assets/js/inscription.js"></script>

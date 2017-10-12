@@ -64,6 +64,10 @@ if($p === 'ajout-article'){
         include('pages/bddSupressionArticle.php');
     }
 
+    if ($p === 'deco') {
+        include('pages/deconnection.php');
+    }
+
     
 
 $content = ob_get_clean();

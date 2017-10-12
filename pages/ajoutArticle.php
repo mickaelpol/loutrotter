@@ -1,3 +1,14 @@
+<?php 
+if (!isset($_SESSION['admin'])) {
+    header("Location: ?p=accueil");
+} else {
+    if ($_SESSION['admin'] === "0") {
+        header("Location: ?p=accueil");
+    }
+}
+
+?>
+
 <div class="container">
     <div class="row ">
         <div class="col-xs-4 col-xs-offset-4">
