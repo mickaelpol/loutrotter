@@ -32,8 +32,6 @@ if (isset($_POST['valid'])) {
         $row = $reponse->fetch();
 
         // Verification de la correspondance du mot de passe tapé et celui sotcké dans la BDD et si l'users est ban ou pas
-        // var_dump($row['uti_isbanned']);
-        // die();
         if ($email === $row['uti_mail']) {
 
             if ($row['uti_isbanned'] === "0") {

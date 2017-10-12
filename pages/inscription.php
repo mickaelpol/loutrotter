@@ -1,8 +1,8 @@
 <?php 
 
-    if (isset($_SESSION['nom'])) {
-        header("Location: ?p=accueil");
-    }
+if (isset($_SESSION['nom'])) {
+    header("Location: ?p=accueil");
+}
 
 //  fonction verifiant si la valeurs des inputs n'est pas vide
 function testInput($fichier){
@@ -19,7 +19,7 @@ if (isset($_POST['valid'])) {
 
     // si tous les inputs sont remplis
     if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['emailVerif']) && !empty($_POST['password']) && !empty($_POST['passwordVerif'])) {
-        
+
         // stockage des valeurs dans des variables
         $nom = htmlspecialchars($_POST['nom'], ENT_QUOTES);
         $prenom = htmlspecialchars($_POST['prenom'], ENT_QUOTES);
@@ -40,17 +40,21 @@ if (isset($_POST['valid'])) {
         
         //  sinon je lance l'execution
         else {
-        
             // hash du password 
             $pwd = password_hash($pwd, PASSWORD_DEFAULT);
             // préparation de la requete a envoyer
             $sql = sprintf("INSERT  INTO uti_utilisateur (uti_mdp, uti_nom, uti_prenom, uti_mail, uti_isadmin, uti_isbanned) 
-                    VALUES ('%s', '%s', '%s', '%s', 0, 0)", $pwd, $nom, $prenom, $email);
-        
+                VALUES ('%s', '%s', '%s', '%s', 0, 0)", $pwd, $nom, $prenom, $email);
+            if ($bdd->exec($sql) ==1) {
+
+
             // envoi de la requete
-            $envoi = $bdd->query($sql);
-            $message = '<div class="row"><p class="text-success text-center">L\'inscription à été validé ! cliquez <a href="?p=connection" >ici pour être re diriger directement</a></p></div>';
-            header('refresh:5;url=?p=connection'); 
+                $message = '<div class="row"><p class="text-success text-center">L\'inscription à été validé ! cliquez <a href="?p=connection" >ici pour être re diriger directement</a></p></div>';
+                header('refresh:5;url=?p=connection'); 
+
+            } else {
+                $message = '<div class="row"><p class="text-danger text-center">  L\'email est déjà utilisé </p></div>';
+            }
         }
         
         
