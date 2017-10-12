@@ -26,6 +26,5 @@
 
 <!--////////////////// INCLUDE DU FOOTER AFIN DE PAS LE REPETER SUR CHAQUE PAGES //////////////////-->
     <?php include('footer.php'); ?>
-    
 </body>
 </html>
