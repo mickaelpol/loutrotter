@@ -17,6 +17,11 @@ body{
     color:#A65E35;
     background: #CFEB00;
 }
+.Logo {
+    width: 50px;
+    height: 50px;
+}
+
 footer a{
     color:#A65E35;
 }

@@ -67,12 +67,17 @@ if($p === 'ajout-article'){
         include('pages/article.php');
     }
 
+    if ($p === 'deco') {
+        include('pages/deconnection.php');
+    }
+
     if($p=== 'edit-article'){
         include('pages/editArticle.php');
     }
     if($p=== 'update-article'){
         include('pages/bddUpdateArticle.php');
     }
+
     
 
 $content = ob_get_clean();
