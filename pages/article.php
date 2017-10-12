@@ -17,25 +17,25 @@
 <div class="row">
 <h3 class='titre'><i class="fa fa-map-signs" aria-hidden="true"></i>
 Lieux</h3>
-<div class='pull-right'>
+<p class='text-left'>
     <?= $result['art_contenu_lieux'] ?>
 
 </div>
 </div>
 <div class="row">
-<h3 class='titre pull-right'>Monument<i class="fa fa-university" aria-hidden="true"></i>
+<h3 class='titre text-right'>Monument<i class="fa fa-university" aria-hidden="true"></i>
 </h3>
-<div class='pull-right'>
+<p class='text-right'>
     <?= $result['art_contenu_monuments'] ?>
 
-</div>
+</p>
 </div>
 <div class="row">
 <h3 class='titre'>Culture</h3>
-<div class='pull-right'>
+<p class='text-left'>
     <?= $result['art_contenu_culture'] ?>
 
-</div>
+</p>
 </div>
 </section>
 </main>
