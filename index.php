@@ -66,6 +66,13 @@ if($p === 'ajout-article'){
     if($p=== 'article'){
         include('pages/article.php');
     }
+
+    if($p=== 'edit-article'){
+        include('pages/editArticle.php');
+    }
+    if($p=== 'update-article'){
+        include('pages/bddUpdateArticle.php');
+    }
     
 
 $content = ob_get_clean();
