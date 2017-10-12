@@ -1,3 +1,16 @@
+<?php 
+
+if (!isset($_SESSION['admin'])) {
+    header("Location: ?p=accueil");
+} else {
+    if ($_SESSION['admin'] === "0") {
+        header("Location: ?p=accueil");
+    }
+}
+
+?>
+
+
 <div class="container">
     <div class="row ">
         <div class="col-xs-4 col-xs-offset-4">
@@ -34,9 +47,9 @@
                 </thead>
                 <tbody>
                     <?php
-                        $reponse = $bdd->query('SELECT * FROM art_article INNER JOIN pay_pays ON art_pay_oid = pay_oid');
-                        while ($donnees = $reponse->fetch()){
-                    ?>
+                    $reponse = $bdd->query('SELECT * FROM art_article INNER JOIN pay_pays ON art_pay_oid = pay_oid');
+                    while ($donnees = $reponse->fetch()){
+                        ?>
                         <tr>
                             <td class="text-center"><a href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></td>
                             <td class="text-center"><?= $donnees['pay_nom'] ?></td>
@@ -64,11 +77,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </td>
                         </tr>
-                    <?php
-                        }
+                        <?php
+                    }
                     ?>
                 </tbody>
             </table>

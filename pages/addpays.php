@@ -1,4 +1,13 @@
 <?php
+    
+    if (!isset($_SESSION['admin'])) {
+        header("Location: ?p=accueil");
+    } else {
+        if ($_SESSION['admin'] === "0") {
+            header("Location: ?p=accueil");
+        }
+    }
+
     $selecteur =  $bdd->query("select * from con_continent")->fetchAll();
     if(!empty($_POST['name'])){
         $name = htmlspecialchars($_POST['name'],ENT_QUOTES);
