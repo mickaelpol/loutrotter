@@ -78,7 +78,16 @@ if($p === 'ajout-article'){
         include('pages/bddUpdateArticle.php');
     }
 
+    if($p=== 'listeUsr'){
+        include('pages/listeUtilisateur.php');
+    }
+    if($p=== 'gestionBan'){
+        include('pages/gestionBan.php');
+    }
     
 
+
+
+    
 $content = ob_get_clean();
 include('pages/templates/default.php');
