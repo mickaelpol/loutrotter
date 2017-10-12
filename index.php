@@ -22,7 +22,7 @@ include("connectionDb/connection.php");
 
 ////// SI LA VARIABLE SÉTÉ VAUT LISTEART ALORS ON INCLUE LA PAGE LISTE DES ARTICLES DANS $CONTENT ////
     if($p === 'listeArt'){
-        include('pages/listeArticles.php');
+        include('pages/listArticle.php');
     }
 
 //////////// SI LA VARIABLE SÉTÉ VAUT CONTACT ALORS ON INCLUE LA PAGE CONTACT DANS $CONTENT//////// ///
