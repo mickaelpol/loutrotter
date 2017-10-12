@@ -28,8 +28,8 @@
                         <th class="valider text-center col-sm-7">Titre de l'article</th>
                         <th class="valider text-center col-sm-2">Pays</th>
                         <th class="valider text-center col-sm-1">Liste des commentaires</th>
-                        <th class="valider text-center col-sm-1">Editer un article</th>
-                        <th class="valider text-center col-sm-1">Supprimer un article</th>
+                        <th class="valider text-center col-sm-1">Editer l'article</th>
+                        <th class="valider text-center col-sm-1">Supprimer l'article</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,7 +41,7 @@
                             <td class="text-center"><?= $donnees['art_titre'] ?></td>
                             <td class="text-center"><?= $donnees['pay_nom'] ?></td>
                             <td class="text-center"><a class="btn lien" href="#"><i class="fa fa-comments-o fa-2x"></i></a></td>
-                            <td class="text-center"><a class="btn lien" href="#"><i class="fa fa-pencil fa-2x"></i></a></td>
+                            <td class="text-center"><a class="btn lien" href="?p=edit-article&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-pencil fa-2x"></i></a></td>
                             <td class="text-center">
                                 <a class="btn lien" href="#" data-toggle="modal" data-target="#modalSupArticle<?= $donnees['art_oid'] ?>"><i class="fa fa-trash fa-2x"></i></a>
                                 <!-- Modal -->
@@ -53,7 +53,7 @@
                                             <h4 class="modal-title text-center">Suppression</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p><span class="gras">Attention voulez vous vraiment supprimer l'article : <?=$donnees['art_titre'] ?> ?</span></p>
+                                            <p><span class="gras">Attention voulez vous vraiment supprimer l'article: <br> <?=$donnees['art_titre'] ?> ?</span></p>
                                         </div>
                                         <div class="modal-footer">
                                             <form action="?p=bdd-suppression-article" method="post">
