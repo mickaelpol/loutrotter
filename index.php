@@ -63,13 +63,16 @@ if($p === 'ajout-article'){
     if($p=== 'bdd-suppression-article'){
         include('pages/bddSupressionArticle.php');
     }
+    if($p=== 'article'){
+        include('pages/article.php');
+    }
+
     if($p=== 'edit-article'){
         include('pages/editArticle.php');
     }
     if($p=== 'update-article'){
         include('pages/bddUpdateArticle.php');
     }
-
     
 
 $content = ob_get_clean();

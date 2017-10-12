@@ -19,7 +19,7 @@
     <?php foreach($result->fetchAll() as $key=>$value):  ?>
     <div class="row">
         <div class="col-md-offset-2 col-md-8 jumbotron listpays">
-            <h5><a href=""><?=  $value['art_titre']; ?></a></h5>
+            <h5><a href="?p=article&art=<?= $value['art_oid']?>"><?=  $value['art_titre']; ?></a></h5>
         </div>
     </div>
     <?php endforeach; ?>
