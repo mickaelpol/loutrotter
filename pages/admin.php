@@ -13,7 +13,7 @@
             <a href="?p=addPays" class="btn valider"><i class="fa fa-globe"></i> Ajouter un pays</a>
         </div>
         <div class="col-xs-offset-1 col-xs-2">
-            <a href="#" class="btn valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
+            <a href="?p=listeUsr" class="btn valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
         </div>
     </div>
     <div class=" row">
@@ -38,7 +38,7 @@
                         while ($donnees = $reponse->fetch()){
                     ?>
                         <tr>
-                            <td class="text-center"><?= $donnees['art_titre'] ?></td>
+                            <td class="text-center"><a href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></td>
                             <td class="text-center"><?= $donnees['pay_nom'] ?></td>
                             <td class="text-center"><a class="btn lien" href="#"><i class="fa fa-comments-o fa-2x"></i></a></td>
                             <td class="text-center"><a class="btn lien" href="?p=edit-article&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-pencil fa-2x"></i></a></td>
