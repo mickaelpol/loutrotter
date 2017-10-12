@@ -5,7 +5,6 @@ $btnCo = isset($_SESSION['nom']) ? '<a href="?p=deco"><i class="fa fa-power-off"
 
 $btnAdmin = "";
 if (isset($_SESSION['admin'])) {
-var_dump($_SESSION['admin']);
     $btnAdmin = $_SESSION['admin'] === '0' ? '' : '<a href="?p=admin"><i class="fa fa-cogs" aria-hidden="true"></i>'. ' ADMIN'. '</a>';
 }
 
