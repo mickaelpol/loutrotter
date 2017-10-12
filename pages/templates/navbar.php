@@ -6,7 +6,7 @@
     </div>
     <ul class="nav navbar-nav">
         <li class="active"><a href="?p=accueil">
-        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>    
+            <img class="Logo" src="assets/img/Logo_Loutrotter.png" alt="Logo_Loutrotter">
         </a></li>
         <li><a href="">Contact</a></li>
     </ul>
@@ -22,7 +22,7 @@
             </div>
         </form>
         <li><a href="?p=inscription"><i class="fa fa-user-plus" aria-hidden="true"></i>s'inscrire</a></li>
-        <li><a href="?p=connection"><span class="glyphicon glyphicon-user"></span> se connecter</a></li>
+        <li><a href="?p=connection"><i class="fa fa-user" aria-hidden="true"></i> se connecter</a></li>
     </ul>
 </div>
 </nav>
