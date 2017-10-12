@@ -63,7 +63,9 @@ if($p === 'ajout-article'){
     if($p=== 'bdd-suppression-article'){
         include('pages/bddSupressionArticle.php');
     }
-
+    if($p=== 'article'){
+        include('pages/article.php');
+    }
     
 
 $content = ob_get_clean();
