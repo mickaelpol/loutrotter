@@ -84,6 +84,10 @@ if($p === 'ajout-article'){
     if($p=== 'gestionBan'){
         include('pages/gestionBan.php');
     }
+
+    if ($p === 'profil') {
+        include('pages/profilUser.php');
+    }
     
 
 
