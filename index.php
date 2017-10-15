@@ -88,6 +88,10 @@ if($p === 'ajout-article'){
     if ($p === 'profil') {
         include('pages/profilUser.php');
     }
+
+    if ($p === 'traitModifProfil') {
+        include('pages/traitModifProfil.php');
+    }
     
 
 
