@@ -39,6 +39,7 @@ if (isset($_POST['valid'])) {
                 if (password_verify($pwd, $row['uti_mdp'])) {
                     $_SESSION['nom'] = $row['uti_prenom'];
                     $_SESSION['admin'] = $row['uti_isadmin'];
+                    $_SESSION['id'] = $row['uti_oid'];
 
                     $valide = '<div class="text-success"> Connection veuillez patientez vous allez être rediriger sinon cliquez sur ce <a href="?p=accueil">lien</a> pour être re diriger directement</div>';
                     $loader = "<div class='container'>
