@@ -83,7 +83,7 @@ if (isset($_SESSION['admin'])) {
               <span class="glyphicon glyphicon-th-list">
               </button>
               <a class="navbar-brand" href="?p=accueil">Loutrotter</a>
-            </div>
+            
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li><a href="#">Accueil</a></li>

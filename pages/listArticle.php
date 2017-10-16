@@ -13,7 +13,9 @@
 
 ?>
 <header class="page-header container text-center">
+
     <h1 class='titre animated zoomInRight col-sm-offset-4 col-sm-4'><?= $titre['pay_nom'] ?></h1>
+
 </header>
 <div class="container">
     <?php foreach($result->fetchAll() as $key=>$value):  ?>

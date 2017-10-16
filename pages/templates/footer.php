@@ -1,6 +1,5 @@
 <footer class="container-fluid text-center">
 
-    <div class="row">
         <div class="col-xs-5">
             Partenaire
         </div>
@@ -25,7 +24,7 @@
                     </a></li>
                 </ul>
             </div>
-        </div>
+        
     </div>
 
 </footer>
