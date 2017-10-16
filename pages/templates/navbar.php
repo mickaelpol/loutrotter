@@ -51,7 +51,7 @@ if (isset($_SESSION['admin'])) {
             <li class="active"><a href="#">
               <img class="Logo" src="assets/img/Logo_Loutrotter.png" alt="Logo_Loutrotter">
             </a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="?p=contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
           <form class="navbar-form navbar-left" action="" method="post">
@@ -87,7 +87,7 @@ if (isset($_SESSION['admin'])) {
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li><a href="#">Accueil</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="?p=contact">Contact</a></li>
                 <div class="col-xs-12">
                 <form class="navbar-form navbar-left" action="" method="post">
                 <div class="input-group">
