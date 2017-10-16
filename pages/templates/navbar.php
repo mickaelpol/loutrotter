@@ -12,7 +12,7 @@ if (isset($_SESSION['admin'])) {
 
 
 <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <!-- <div class="col-sm-8 col-sm-offset-2"> -->
       <nav class="hidden-xs navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -72,7 +72,7 @@ if (isset($_SESSION['admin'])) {
       </nav>
 
 
-    </div>
+    <!-- </div> -->
   </div>
 
     <div class="visible-xs">
@@ -83,7 +83,7 @@ if (isset($_SESSION['admin'])) {
               <span class="glyphicon glyphicon-th-list">
               </button>
               <a class="navbar-brand" href="?p=accueil">Loutrotter</a>
-            </div>
+            
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
                 <li><a href="#">Accueil</a></li>

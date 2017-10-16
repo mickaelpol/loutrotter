@@ -8,12 +8,21 @@
 ?>
 
 
-
 <header class="page-header container text-center">
     <h1 class='titre'><?= $result['art_titre'] ?></h1>
 </header>
 <main class="container">
+<section class ='row'>
+    <div>
+        <?= $result['art_lienvideo']?>
+    </div>
+
+</section>
+
 <section class='col-sm-offset-2 col-sm-8'>
+
+
+
 <div class="row">
 <h3 class='titre'><i class="fa fa-map-signs" aria-hidden="true"></i>
 Lieux</h3>
@@ -37,5 +46,11 @@ Lieux</h3>
 
 </p>
 </div>
+</section>
+<section class ='row'>
+    <div class='insta'>
+        <?= $result['art_lieninsta']?>
+    </div>
+
 </section>
 </main>
