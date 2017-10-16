@@ -9,7 +9,7 @@
         <div class="col-xs-5">
             Réseau sociaux
             <div>
-                <ul class = "list-unstyled list-inline">    
+                <ul class = "list-unstyled list-inline">
                     <li><a href="https://www.facebook.com/LouTrotterBlog">
                     <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
                     </a></li>
@@ -26,7 +26,5 @@
             </div>
         
     </div>
-    
+
 </footer>
-<script src="node_modules/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="node_modules/bootstrap/js/dropdown.js"></script>

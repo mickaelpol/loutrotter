@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!isset($_SESSION['admin'])) {
     header("Location: ?p=accueil");
 } else {
@@ -30,13 +30,13 @@ if (!isset($_SESSION['admin'])) {
                     <div class="col-xs-2">
                         <label for="pays">Pays</label>
                         <select class="form-control" name="country_name" id="pays">
-                            <?php 
+                            <?php
                                 $reponse = $bdd->query('SELECT * FROM pay_pays ORDER BY pay_nom ASC');
-                                while ($donnees = $reponse->fetch()) 
+                                while ($donnees = $reponse->fetch())
                                 {
                             ?>
                             <option value=<?= $donnees['pay_oid'] ?>><?= $donnees['pay_nom'] ?></option>
-                            <?php 
+                            <?php
                                 }
                                 $reponse->closeCursor();
                             ?>
@@ -88,5 +88,5 @@ if (!isset($_SESSION['admin'])) {
         </div>
     </div>
 </div>
-<script src="node_modules/jquery/dist/jquery.js"></script>
+
 <script src="./assets/js/ajoutArticle.js"></script>

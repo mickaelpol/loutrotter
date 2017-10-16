@@ -1,9 +1,9 @@
-<?php 
+<?php
     if (isset($_POST)){
         $nom = htmlspecialchars($_POST['nom']);
         $mail =  htmlspecialchars($_POST['mail']);
         $message_txt =  htmlspecialchars($_POST['message']);
-        
+
         if (!empty($nom) && !empty($mail) && !empty($message_txt)){
             var_dump($_POST);
             $passage_ligne = "\r\n";
@@ -32,13 +32,13 @@
 <div class="container">
     <div class="row ">
         <div class="col-xs-6 col-xs-offset-3">
-            <h1 class="titre page-header text-center">Contactez moi !</h1>
+            <h1 class="titre page-header text-center animated zoomInLeft">Contactez moi !</h1>
         </div>
         <br>
     </div>
     <div class="row">
         <form action="?p=contact" method="POST">
-                
+
             <div class="col-xs-offset-2 col-xs-3">
                 <div class="form-group">
                     <label for="nom">Nom</label>
@@ -52,10 +52,10 @@
             <div class="col-xs-5">
                 <label for="message">Message</label>
                 <textarea class="form-control" name="message" id="message" cols="30" rows="10"></textarea>
-                
-                <input class="btn valider pull-right" type="submit" value="Envoyer">
-            </div>      
+
+                <input class="btn btn-success valider pull-right" type="submit" value="Envoyer">
+            </div>
         </form>
-    </div>        
-    
+    </div>
+
 </div>

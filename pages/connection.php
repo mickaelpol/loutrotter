@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (isset($_SESSION['nom'])) {
     header("Location: ?p=accueil");
@@ -8,7 +8,7 @@ if (isset($_SESSION['nom'])) {
 function testInput($fichier){
     if (empty($_POST[$fichier])) {
         return '<div class="text-danger">Le champ '. $fichier .' doit être remplis</div>';
-    } 
+    }
 }
 
 if (isset($_POST['valid'])) {
@@ -51,14 +51,14 @@ if (isset($_POST['valid'])) {
                     header('refresh:3;url=?p=admin');
                 }
                 else {
-                header('refresh:3;url=?p=accueil');    
+                header('refresh:3;url=?p=accueil');
                 }
             }
             else {
                 $valide = '<div class="text-danger"> Identifiants Incorrect <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>';
             }
 
-        } 
+        }
         else {
             $valide = '<div class="text-danger"> Utilisateur Banni <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></div>';
         }
@@ -76,7 +76,7 @@ if (isset($_POST['valid'])) {
 ?>
 <div class="container">
     <div class="row">
-        <div class="page-header col-sm-6 col-sm-offset-3">    
+        <div class="page-header col-sm-6 col-sm-offset-3">
             <h1 class="animated zoomInLeft text-center titre text-uppercase">Connection</h1>
         </div>
     </div>
@@ -115,7 +115,5 @@ if (isset($_POST['valid'])) {
 </div>
 
 
-<!-- Latest compiled and minified JS -->
-<script src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="assets/js/connection.js"></script>
 <script src="assets/js/animationForm.js"></script>

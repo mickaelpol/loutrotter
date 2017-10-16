@@ -1,4 +1,4 @@
-<?php 
+<?php
 $btnUser = isset($_SESSION['nom']) ? "<a href='?p=profil'>". $_SESSION['nom'] . "</a>" : '<a href="?p=connection"><i class="fa fa-user" aria-hidden="true"></i> se connecter</a>';
 
 $btnCo = isset($_SESSION['nom']) ? '<a href="?p=deco"><i class="fa fa-power-off" aria-hidden="true"></i></a>' : '<a href="?p=inscription"><i class="fa fa-user-plus" aria-hidden="true"></i> s\'inscrire</a>';
@@ -66,7 +66,7 @@ if (isset($_SESSION['admin'])) {
           </form>
             <li> <?= $btnUser ?></li>
             <li><?= $btnCo ?></li>
-            <li><?= $btnAdmin ?></li> 
+            <li><?= $btnAdmin ?></li>
         </ul>
         </div>
       </nav>
@@ -108,4 +108,4 @@ if (isset($_SESSION['admin'])) {
           </div>
         </nav>
       </div>
-    
+

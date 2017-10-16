@@ -12,19 +12,21 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- ////////////////////// BALISE TITLE A FINIR DE REMPLIR /////////////////////////// -->
-    <title>Loutrotter voyages partage découverte cuisine continent pays avion vol bateau </title> 
+    <title>Loutrotter voyages partage découverte cuisine continent pays avion vol bateau </title>
 </head>
 
 
 <body>
 
-<!--////////////// INCLUDE DE LA NAVBAR AFIN DE PAS LA REPETER DANS LES AUTRES PAGES //////////////-->
+    <!--////////////// INCLUDE DE LA NAVBAR AFIN DE PAS LA REPETER DANS LES AUTRES PAGES //////////////-->
     <?php include('navbar.php'); ?>
-    
-<!--/////////////// INCLUDE DU CONTENU DE LA PAGE PAR L'INDEX.PHP /////////////////////////////////-->
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--/////////////// INCLUDE DU CONTENU DE LA PAGE PAR L'INDEX.PHP /////////////////////////////////-->
     <?= $content ?>
 
-<!--////////////////// INCLUDE DU FOOTER AFIN DE PAS LE REPETER SUR CHAQUE PAGES //////////////////-->
+    <!--////////////////// INCLUDE DU FOOTER AFIN DE PAS LE REPETER SUR CHAQUE PAGES //////////////////-->
     <?php include('footer.php'); ?>
 </body>
 </html>
