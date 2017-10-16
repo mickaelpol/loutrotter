@@ -6,6 +6,7 @@ body{
     color:#A65E35;
     
 }
+
 .margeErreur {
     margin-top: 10px;
     margin-bottom: 30px;
@@ -14,6 +15,7 @@ body{
 .margeSupp {
     margin-top: 60px;
 }
+
 .titre{
     font-family: 'Hamurz', sans-serif;
     font-size: 50px;
@@ -44,15 +46,24 @@ strong {
 i {
     font-size: 18px;
 }
+.dropdown-menu {
+	width: 100%;
+	height: 50px;
+}
 
 .valider{
     background: #CFEB00;
     color:#A65E35;
 }
+.valider:focus, .valider:hover {
+	background: #CFEB00;
+	color: #A65E35; 
+}
 .lien{
     color: #A6602A;
 }
 .jumbotron{
+   
     background: #CFEB00;
 }
 .jumbotron a{
@@ -162,10 +173,35 @@ i {
     vertical-align: middle;
 }
 
+
 .photo {
     min-width: 1200px;
     max-height: 600px;
     max-width: 100%;
     height: auto;
 } 
+
+.activé a, .activé a:hover, .activé a:focus{
+	line-height: 20px;
+	padding: 10px;
+	color: #B05D33;
+	border-bottom: 1px solid #B05D33;
+}
+.dropdown-menu a:hover {
+	border-bottom: 1px solid black;
+}
+
+.cont {
+	line-height: 40px;
+}
+.cont a:hover {
+	line-height: 20px;
+	padding: 10px;
+	border-bottom: 1px solid #B05D33;
+	animation: 
+
+}
+.cont a {
+	text-decoration: none;
+}
 

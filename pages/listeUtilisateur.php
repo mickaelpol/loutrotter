@@ -18,7 +18,7 @@
                 </thead>
                 <tbody>
                 <?php
-                    $reponse = $bdd->query('SELECT * FROM uti_utilisateur');
+                    $reponse = $bdd->query('SELECT * FROM uti_utilisateur WHERE uti_isadmin = 0');
                     while ($donnees = $reponse->fetch()){
                 ?>
                     <tr>
