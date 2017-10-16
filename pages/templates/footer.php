@@ -27,5 +27,7 @@
             </div>
         </div>
     </div>
-
+    
 </footer>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/js/dropdown.js"></script>
