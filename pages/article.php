@@ -12,24 +12,21 @@
     <h1 class='titre'><?= $result['art_titre'] ?></h1>
 </header>
 <main class="container">
-<section class ='row'>
+<div class ='row'>
     <div>
-        <?= $result['art_lienvideo']?>
+        <?= htmlspecialchars_decode($result['art_lienvideo'],ENT_QUOTES)?>
     </div>
 
-</section>
-
-<section class='col-sm-offset-2 col-sm-8'>
-
-
-
+</div>
+<div class="container">
+<section class='col-sm-offset-1 col-sm-9'>
 <div class="row">
 <h3 class='titre'><i class="fa fa-map-signs" aria-hidden="true"></i>
 Lieux</h3>
 <p class='text-left'>
     <?= $result['art_contenu_lieux'] ?>
+</p>
 
-</div>
 </div>
 <div class="row">
 <h3 class='titre text-right'>Monument<i class="fa fa-university" aria-hidden="true"></i>
@@ -47,10 +44,9 @@ Lieux</h3>
 </p>
 </div>
 </section>
-<section class ='row'>
-    <div class='insta'>
-        <?= $result['art_lieninsta']?>
+</div>
+    <div class='row insta'>
+        <?= htmlspecialchars_decode($result['art_lieninsta'],ENT_QUOTES)?>
     </div>
 
-</section>
 </main>
