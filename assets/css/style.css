@@ -41,6 +41,19 @@ i {
 	height: 50px;
 }
 
+.margeErreur {
+    margin-top: 5px;
+}
+.margeSupp {
+    margin-top: 60px;
+}
+
+.bord {
+    border: 1px solid black;
+}
+.btn-danger:hover {
+    box-shadow: 1px 3px 20px black;
+}
 .valider{
     background: #CFEB00;
     color:#A65E35;
@@ -78,6 +91,7 @@ i {
     background-color: #ADE602;
     border: none;
     color: #834A1E;
+    box-shadow: 1px 3px 20px #000;
 }
 
 .float-label-control { position: relative; margin-bottom: 1.5em; }

@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
-			<h1 class="titre text-center text-uppercase animated bounceInLeft">profil</h1>
+			<h1 class="titre text-center text-uppercase animated zoomInRight">profil</h1>
 		</div>
 	</div>
 </div>
@@ -22,7 +22,7 @@
 		<!-- Formulaire de changement du Nom Prenom Email -->
 		<div class="col-sm-4 col-sm-offset-4 formulaireCo">
 			<form method="post" action="?p=traitModifProfil" role="form" id="modifProfil">
-				<?php 
+				<?php
 
 				$reponse = $bdd->query('SELECT * FROM uti_utilisateur WHERE uti_oid = '.$_SESSION["id"].' ');
 				while ($donnees = $reponse->fetch()){
@@ -46,7 +46,7 @@
 					<div class="form-group">
 						<input type="submit" name="validForm" class="btn btn-md btn-success pull-right">
 					</div>
-					<?php 
+					<?php
 				}
 				?>
 			</form>
@@ -99,32 +99,43 @@
 					<input type="submit" name="validPass" class="btn btn-md btn-success pull-right">
 				</div>
 			</form>
-			<div class="row text-center">
-			<p>Supprimer mon compte
-      		<a href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#smallModal">X</a></p>
-  	</div>
-  <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-      </div>
-      <div class="modal-body">
-        <h3>Modal Body</h3>
-      </div>
-      <div class="modal-footer">
-		<input class="hidden" type="text" name="idUser" value="<?= $_SESSION['id'] ?>">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary"> Valider suppression </button>
-      </div>
-    </div>
-  </div>
-</div>
+			<!-- <div class="container"> -->
+				<!-- </div> -->
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-4 margeSupp">
+					<!-- Trigger the modal with a button -->
+					<button type="button" class="btn btn-danger btn-lg pull-right" data-toggle="modal" data-target="#myModal">Supprimer le compte</button>
+				</div>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog">
+
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title text-danger text-center text-uppercase">Suppression du compte</h4>
+							</div>
+							<div class="modal-body">
+								<p class="text-danger text-center"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Êtes vous certain de vouloir supprimer votre compte ?</p>
+							</div>
+							<div class="modal-footer">
+								<form action="?p=traitModifProfil" method="POST">
+									<input type="text" class="hidden" name="idUser" value="<?= $_SESSION['id'] ?>">
+									<button type="button" class="btn btn-danger" data-dismiss="modal">Annuler</button>
+									<button type="submit" name="validSupp" class="btn btn-success">Valider suppression</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-</div>
 
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/animationForm.js"></script>
-<script type="text/javascript" src="assets/js/modifProfil"></script>
+
+	<script type="text/javascript" src="assets/js/animationForm.js"></script>
+	<script type="text/javascript" src="assets/js/modifProfil"></script>
