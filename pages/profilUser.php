@@ -99,10 +99,32 @@
 					<input type="submit" name="validPass" class="btn btn-md btn-success pull-right">
 				</div>
 			</form>
+			<div class="row text-center">
+			<p>Supprimer mon compte
+      		<a href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#smallModal">X</a></p>
+  	</div>
+  <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModal" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Modal Body</h3>
+      </div>
+      <div class="modal-footer">
+		<input class="hidden" type="text" name="idUser" value="<?= $_SESSION['id'] ?>">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary"> Valider suppression </button>
+      </div>
+    </div>
+  </div>
+</div>
 		</div>
 	</div>
 </div>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/animationForm.js"></script>
 <script type="text/javascript" src="assets/js/modifProfil"></script>
