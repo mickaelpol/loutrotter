@@ -101,8 +101,36 @@
 			</form>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-4 margeSupp">
+			<p class="text-danger">Suprimer mon compte
+			<a class="btn btn-danger pull-right" data-toggle="modal" href='#modal-id'>X</a></p>
+			<div class="modal fade" id="modal-id">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title text-danger text-center text-uppercase">Suppression du compte</h4>
+						</div>
+						<div class="modal-body">
+							<p class="text-center text-danger text-uppercase">Êtes vous certain de vouloir supprimer votre compte?</p>
+						</div>
+						<div class="modal-footer">
+							<form method="POST" role="form" action="?p=traitModifProfil">
+								<input class="hidden" type="text" name="idUser" value="<?= $_SESSION['id'] ?>">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Fermer</button>
+								<button name="validDelete" type="submit" class="btn btn-success">Valider suppression</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
 </div>
 
 <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/animationForm.js"></script>
 <script type="text/javascript" src="assets/js/modifProfil"></script>

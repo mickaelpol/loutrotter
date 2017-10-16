@@ -96,6 +96,27 @@ if (!empty($_POST['password']) & !empty($_POST['passwordVerif'])) {
 }
 
 
+///////// Validation de suppression du compte utilisateur /////////
+
+if (isset($_POST['validDelete'])) {
+
+	$idUser = $_POST['idUser'];
+
+	$deleteUSer = sprintf("DELETE FROM uti_utilisateur WHERE uti_oid=%d ", $idUser);
+
+	$updateUser = $bdd->exec($deleteUSer);
+
+	header('refresh:5;url=?p=deco');
+	$valide = '<div class="text-danger"> Votre compte à bien été supprimer </div>';
+	$loader = "<div class='container'>
+	<div class='row'>
+		<div id='loading' class='loader'></div>
+	</div>
+	</div>";
+
+}
+
+
 ?>
 
 
