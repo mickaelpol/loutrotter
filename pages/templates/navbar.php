@@ -54,16 +54,16 @@ if (isset($_SESSION['admin'])) {
             <li><a href="?p=contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-left" action="" method="post">
-          <div class="input-group">
+          <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
+            <div class="input-group">
               <input name="s" type="text" class="form-control" placeholder="Search">
-              <div class="input-group-btn">
-                  <a class="btn" type="submit">
-                      <i class="glyphicon glyphicon-search"></i>
-                  </a>
-              </div>
-          </div>
-        </form>
+                <div class="input-group-btn">
+                    <button class="btn" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </button>
+                </div>
+            </div>
+          </form>
             <li> <?= $btnUser ?></li>
             <li><?= $btnCo ?></li>
             <li><?= $btnAdmin ?></li> 
@@ -89,13 +89,13 @@ if (isset($_SESSION['admin'])) {
                 <li><a href="#">Accueil</a></li>
                 <li><a href="?p=contact">Contact</a></li>
                 <div class="col-xs-12">
-                <form class="navbar-form navbar-left" action="" method="post">
+                <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
                 <div class="input-group">
                     <input name="s" type="text" class="form-control" placeholder="Search">
                     <div class="input-group-btn">
-                        <a class="btn" type="submit">
+                        <button class="btn" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </form>

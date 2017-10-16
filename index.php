@@ -90,6 +90,9 @@ if($p === 'ajout-article'){
     if ($p === 'contact') {
         include('pages/contact.php');
     }
+    if ($p === 'recherche') {
+        include('pages/recherche.php');
+    }
 
 
 
