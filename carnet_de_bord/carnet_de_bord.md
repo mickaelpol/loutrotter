@@ -72,3 +72,13 @@
 7. Page d'affichage des articles
 
 -------------------------------------
+
+>5 ieme journée : Objectif
+
+1. Ajouter la navbar collpase sur icone de la navbar th-list
+2. Page du formulaire de contact 
+3. Page du traitement des recherches 
+4. Page d'accueil 
+5. Ajout d'un commentaire
+
+>Objectif atteint :
