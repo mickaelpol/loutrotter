@@ -48,7 +48,7 @@ if (isset($_SESSION['admin'])) {
           </div>
 
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">
+            <li class="active"><a href="?p=accueil">
               <img class="Logo" src="assets/img/Logo_Loutrotter.png" alt="Logo_Loutrotter">
             </a></li>
             <li><a href="?p=contact">Contact</a></li>
@@ -82,7 +82,7 @@ if (isset($_SESSION['admin'])) {
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-th-list">
               </button>
-              <a class="navbar-brand" href="#">Loutrotter</a>
+              <a class="navbar-brand" href="?p=accueil">Loutrotter</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
