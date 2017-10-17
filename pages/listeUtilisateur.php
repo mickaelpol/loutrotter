@@ -25,7 +25,7 @@
                         <td class="text-center"><?= $donnees['uti_nom'] ?></td>
                         <td class="text-center"><?= $donnees['uti_prenom'] ?></td>
                         <td class="text-center"><?= $donnees['uti_mail'] ?></td>
-                        <td class="text-center"><?=  $donnees['uti_isbanned']==='0' ? '<a href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-unlock"></i></a>': '<a href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-lock"></i></a>'  ?></td>
+                        <td class="text-center"><?=  $donnees['uti_isbanned']==='0' ? '<a class="link" href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-unlock"></i></a>': '<a class="link" href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-lock"></i></a>'  ?></td>
                     </tr>
                 <?php
                     }
