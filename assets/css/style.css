@@ -199,3 +199,14 @@ i {
 .insta{
     height: 200px;
 }
+.instaA{
+    overflow:hidden; 
+    width:50%;
+   
+}
+.cadre, .cadre:hover{
+    border-radius: 15%;
+}
+.logoA{
+    width:10%;
+}
