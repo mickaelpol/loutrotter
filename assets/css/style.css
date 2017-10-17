@@ -4,7 +4,7 @@ body{
     font-family: 'Caviar', sans-serif;
     font-size: 18px;
     color:#A65E35;
-    
+
 }
 .titre{
     font-family: 'Hamurz', sans-serif;
@@ -60,7 +60,7 @@ i {
 }
 .valider:focus, .valider:hover {
 	background: #CFEB00;
-	color: #A65E35; 
+	color: #A65E35;
 }
 .lien{
     color: #A6602A;
@@ -85,7 +85,7 @@ i {
     background-color: #BEFF00;
     border: none;
     color: #A6602A;
-} 
+}
 .btn-success:hover {
     background-color: #ADE602;
     border: none;
@@ -200,6 +200,17 @@ i {
     height: 200px;
 
 }
+
+.instaA{
+
+    border:1px solid #B05D33; 
+    overflow:hidden; 
+    width:750px; 
+    height:125px
+   
+
+}
+
 .cadre, .cadre:hover{
     border-radius: 15%;
 }
@@ -214,6 +225,15 @@ i {
     text-decoration: none;
 
 }
+
+
+.espCom {
+    margin-top: 100px;
+}
+.jumbotron hr {
+    border-top-color: #B05D33;
+}
 .res{
     color: #B05D33;
 }
+

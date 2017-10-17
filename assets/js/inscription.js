@@ -51,13 +51,13 @@ var egalMdp2 = $('#egalMdp2');
     }
 
     //////// fonction verifiant que les deux email soit identique /////////
-    function emailCorrespond(email, email2, emplacement, emplacement2, valeur, valeur2){
+    function emailCorrespond(email, email2, valeur, valeur2){
 
         if (email.val() != email2.val() || email.val()=== "")  {
             email.parent().addClass("has-error");
             email2.parent().addClass("has-error");
-            emplacement.html('Le champ ' + valeur + ' ne correspond pas au champ ' + valeur2);
-            emplacement2.html('Le champ ' + valeur2 + ' ne correspond pas au champ ' + valeur);
+            egalEmail.html('Le champ ' + valeur + ' ne correspond pas au champ ' + valeur2);
+            egalEmail2.html('Le champ ' + valeur2 + ' ne correspond pas au champ ' + valeur);
             return true;
 
         } else {
@@ -74,13 +74,13 @@ var egalMdp2 = $('#egalMdp2');
 
 
     /////// Fonction verifiant l'égalité des mots de passe ////////////////////
-    function egaliteMdp(mdp, mdp2, emplacement, emplacement2, valeur, valeur2){
+    function egaliteMdp(mdp, mdp2, valeur, valeur2){
 
-        if (mdp != mdp2) {
+        if (mdp.val() !== mdp2.val()) {
             mdp.parent().addClass('has-error');
             mdp2.parent().addClass('has-error');
-            emplacement.html('Le champ ' + valeur + ' ne correspond pas au champ ' + valeur2);
-            emplacement2.html('Le champ ' + valeur2 + ' ne correspond pas au champ ' + valeur);
+            egalMdp.html('Le champ ' + valeur + ' ne correspond pas au champ ' + valeur2);
+            egalMdp2.html('Le champ ' + valeur2 + ' ne correspond pas au champ ' + valeur);
             return true;
 
         } else {
@@ -131,7 +131,7 @@ var egalMdp2 = $('#egalMdp2');
         }
 
         // verifie si les deux mots de passe soit égal
-        if (egaliteMdp(pwd, pwd2, egalMdp, egalMdp2, "Mot de passe", "Verification du mot de passe")) {
+        if (egaliteMdp(pwd, pwd2, "Mot de passe", "Verification du mot de passe")) {
             e.preventDefault();
         }
 
