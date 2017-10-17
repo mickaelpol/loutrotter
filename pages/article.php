@@ -13,12 +13,11 @@ $result = $bdd->query($req)->fetch();
 </header>
 <main class="container">
     <div class ='row'>
-        <div class="col-sm-12 text-center">
-            <div>
-                <?= htmlspecialchars_decode($result['art_lienvideo'],ENT_QUOTES)?>
-            </div>
-        </div>
 
+        <div class="col-sm-offset-3 col-sm-6 video">
+            <?= htmlspecialchars_decode($result['art_lienvideo'],ENT_QUOTES)?>
+        </div>
+      
     </div>
     <div class="container">
         <section class='col-sm-offset-1 col-sm-9'>
@@ -45,10 +44,10 @@ $result = $bdd->query($req)->fetch();
 
                 </p>
             </div>
+            <div class='row insta'>
+                <?= htmlspecialchars_decode($result['art_lieninsta'],ENT_QUOTES)?>
+            </div>
         </section>
-    </div>
-    <div class='row insta'>
-        <?= htmlspecialchars_decode($result['art_lieninsta'],ENT_QUOTES)?>
-    </div>
 
+    </div>
 </main>

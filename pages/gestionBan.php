@@ -10,7 +10,6 @@ if (!isset($_SESSION['admin'])) {
 }
 
 $utiId = $_GET['uti'];
-var_dump($utiId);
 
 $sqlUser = sprintf('SELECT * FROM uti_utilisateur WHERE uti_oid = %d', $utiId);
 $reponse = $bdd->query($sqlUser);
