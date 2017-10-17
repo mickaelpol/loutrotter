@@ -200,6 +200,7 @@ i {
     height: 200px;
 
 }
+
 .instaA{
 
     border:1px solid #B05D33; 
@@ -209,6 +210,7 @@ i {
    
 
 }
+
 .cadre, .cadre:hover{
     border-radius: 15%;
 }
