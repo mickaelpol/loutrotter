@@ -75,7 +75,7 @@ if (isset($_POST['valid'])) {
     </div>
 </div>
 
-<p class='text-center text-danger' id="textError"></p>
+<p class='text-center text-danger' id="inputError"></p>
 <div class="container">
     <div class="row">
         <div class="col-sm-12 formulaireCo">
@@ -98,6 +98,7 @@ if (isset($_POST['valid'])) {
                         <input name="email" id="email" type="email" class="form-control" placeholder="Email">
                         <?= isset($mail) ? $mail: "" ?>
                     </div>
+                    <p class="text-danger" id="egalEmail"></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="form-group float-label-control">
@@ -105,6 +106,7 @@ if (isset($_POST['valid'])) {
                         <input name="emailVerif" id="emailVerif" type="email" class="form-control" placeholder="Verification email">
                         <?= isset($mail) ? $mail: "" ?>
                     </div>
+                    <p class="text-danger" id="egalEmail2"></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-1">
                     <div class="form-group float-label-control">
@@ -112,8 +114,8 @@ if (isset($_POST['valid'])) {
                         <input name="password" id="password" type="password" class="form-control" placeholder="Mot de passe">
                         <?= isset($wrongPwd)? $wrongPwd : "" ?>
                     </div>
-                    <p class="textMdp"></p>
-                    <p class="egalMdp"></p>
+                    <p class="text-danger" id="egalMdp"></p>
+                    <p class="text-danger" id="longMdp"></p>
                 </div>
                 <div class="col-sm-4 col-sm-offset-2">
                     <div class="form-group float-label-control">
@@ -121,8 +123,8 @@ if (isset($_POST['valid'])) {
                         <input name="passwordVerif" id="passwordVerif" type="password" class="form-control" placeholder="Verification mot de passe">
                         <?= isset($wrongPwd)? $wrongPwd : "" ?>
                     </div>
-                    <p class="textMdp"></p>
-                    <p class="egalMdp"></p>
+                    <p class="text-danger" id="egalMdp2"></p>
+                    <p class="text-danger" id="longMdp2"></p>
                 </div>
                 <div class="col-sm-2 col-sm-offset-9">
                     <div class="form-group">

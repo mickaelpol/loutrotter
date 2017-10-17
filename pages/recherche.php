@@ -1,4 +1,7 @@
-<?php 
+<?php
+
+
+
 $recherche = htmlspecialchars($_POST['s'], ENT_QUOTES);
 
 $sqlsearch = sprintf("SELECT * FROM art_article INNER JOIN pay_pays ON art_pay_oid = pay_oid WHERE art_titre LIKE '%%%s%%' OR pay_nom LIKE '%%%s%%' ", $recherche, $recherche);
