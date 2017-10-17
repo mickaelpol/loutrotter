@@ -58,7 +58,7 @@ if (isset($_SESSION['admin'])) {
             <div class="input-group">
               <input name="s" type="text" class="form-control" placeholder="Search">
                 <div class="input-group-btn">
-                    <button class="btn" type="submit">
+                    <button class="btn valider" type="submit">
                         <i class="glyphicon glyphicon-search"></i>
                     </button>
                 </div>

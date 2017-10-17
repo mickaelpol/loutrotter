@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var envoiForm = $('#modifProfil');
 	var envoiMdp = $('#modifPassword');
 
-/////////////////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////////////////
 
 	// stockage des inputs du 1er formulaire (nom prénom email)
 	var nom = $('#nom');
@@ -15,24 +15,24 @@ $(document).ready(function(){
 	var erreurNom = $('#erreurNom');
 	var erreurPrenom = $('#erreurPrenom');
 	var erreurMail = $('#erreurMail');
-	
+
 /////////////////////////////////////////////////////////////////////
 
 	// sotckage des input du 2nd formulaire (Mot de passe)
 	var mdp = $('#password');
 	var VerifMdp = $('#passwordVerif');
 
-///////////// stockage des erreurs des inputs vide mot de passe 
+///////////// stockage des erreurs des inputs vide mot de passe
 	var erreurMdp  = $('#erreurPassword');
 	var erreurMdpVerif = $('#erreurPasswordVerif');
 
-//////////// stockage erreur de correspondance de mot de passe ////// 
+//////////// stockage erreur de correspondance de mot de passe //////
 	var erreurCorresMdp = $('#erreurCorrespond');
 	var erreurCorresMdp2 = $('#erreurCorrespond2');
 
 /////////// stockage erreur longueur du mot de passe ////////////////
-	var infMdp = $('#erreurInf'); 
-	var infMdp2 = $('#erreurInf2'); 
+	var infMdp = $('#erreurInf');
+	var infMdp2 = $('#erreurInf2');
 
 
 /////////////////////////////////////////////////////////////////////
@@ -84,7 +84,7 @@ $(document).ready(function(){
 		}
 	}
 
-/////// Fonction qui verifie que le 1er mot de passe soit supérieur a 8 caractères /////// 
+/////// Fonction qui verifie que le 1er mot de passe soit supérieur a 8 caractères ///////
 	function longueurMdp1(mdp, emplacement, valeur){
 
 		if (mdp.val().length < 8) {
@@ -110,7 +110,7 @@ $(document).ready(function(){
 			emplacement2.html('');
 			return false;
 		}
-	} 
+	}
 
 
 //////////////// Verification du formulaire Nom Prenom Email ///////////

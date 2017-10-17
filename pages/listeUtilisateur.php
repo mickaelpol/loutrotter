@@ -1,3 +1,17 @@
+<?php
+
+if (!isset($_SESSION['admin'])) {
+    header("Location: ?p=accueil");
+} else {
+    if ($_SESSION['admin'] === "0") {
+        header("Location: ?p=accueil");
+    }
+}
+
+?>
+
+
+
 <div class="container">
     <div class="row ">
         <div class="col-xs-6 col-xs-offset-3">
@@ -17,19 +31,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php
+                    <?php
                     $reponse = $bdd->query('SELECT * FROM uti_utilisateur WHERE uti_isadmin = 0');
                     while ($donnees = $reponse->fetch()){
+
                 ?>
                     <tr>
                         <td class="text-center"><?= $donnees['uti_nom'] ?></td>
                         <td class="text-center"><?= $donnees['uti_prenom'] ?></td>
                         <td class="text-center"><?= $donnees['uti_mail'] ?></td>
-                        <td class="text-center"><?=  $donnees['uti_isbanned']==='0' ? '<a href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-unlock"></i></a>': '<a href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-lock"></i></a>'  ?></td>
+                        <td class="text-center"><?=  $donnees['uti_isbanned']==='0' ? '<a class="link" href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-unlock"></i></a>': '<a class="link" href="?p=gestionBan&uti='.$donnees['uti_oid'].'"><i class="fa fa-lock"></i></a>'  ?></td>
                     </tr>
                 <?php
                     }
-                ?>
+                    ?>
                 </tbody>
             </table>
         </div>
