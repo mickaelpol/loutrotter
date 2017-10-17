@@ -9,16 +9,16 @@
             <ul class = "list-unstyled list-inline">
                 
                 <li><a href="https://www.facebook.com/LouTrotterBlog">
-                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-facebook-official fa-2x res" aria-hidden="true"></i>
                 </a></li>
                 <li><a href="https://twitter.com/Loutrotterblog">
-                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square fa-2x res" aria-hidden="true"></i>
                 </a></li>
                 <li><a href="https://www.instagram.com/loutrotterblog/">
-                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-instagram fa-2x res" aria-hidden="true"></i>
                 </a></li>
                 <li><a href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw">
-                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-youtube-square fa-2x res" aria-hidden="true"></i>
                 </a></li>
             </ul>
 </div>
@@ -41,11 +41,12 @@
             cum iusto error voluptatum enim itaque, corporis minus.
             </p>
             <!-- SnapWidget -->
-            <!-- SnapWidget -->
-        <div class="cadre">
-        <iframe src="https://snapwidget.com/embed/456797" class="snapwidget-widget center-block instaA" 
-        allowTransparency="true" frameborder="0" scrolling="no" ></iframe>
-        </div>
+            <div class="col-xs-offset-1">
+            <hr>
+            <iframe src="https://snapwidget.com/embed/456871" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"
+             style="border:none; overflow:hidden; width:750px; height:125px"></iframe>
+             <hr>
+            </div>
         </div>
     </div>
     

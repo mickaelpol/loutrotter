@@ -200,11 +200,6 @@ i {
     height: 200px;
 
 }
-.instaA{
-    overflow:hidden;
-    width:50%;
-
-}
 .cadre, .cadre:hover{
     border-radius: 15%;
 }
@@ -226,3 +221,8 @@ i {
 .jumbotron hr {
     border-top-color: #B05D33;
 }
+
+.res{
+    color: #B05D33;
+}
+
