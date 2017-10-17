@@ -1,5 +1,9 @@
 <?php
 
+if (!isset($_SESSION['nom'])) {
+	header("Location: ?p=accueil");
+}
+
 //  fonction verifiant si la valeurs des inputs n'est pas vide
 function testInput($fichier){
 	if(empty($_POST[$fichier]));

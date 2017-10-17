@@ -1,5 +1,10 @@
+<?php
 
+if (!isset($_SESSION['nom'])) {
+	header("Location: ?p=accueil");
+}
 
+?>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-12">
