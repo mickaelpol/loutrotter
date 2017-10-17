@@ -201,8 +201,12 @@ i {
 
 }
 .instaA{
-    overflow:hidden;
-    width:50%;
+
+    border:1px solid #B05D33; 
+    overflow:hidden; 
+    width:750px; 
+    height:125px
+   
 
 }
 .cadre, .cadre:hover{
@@ -220,9 +224,14 @@ i {
 
 }
 
+
 .espCom {
     margin-top: 100px;
 }
 .jumbotron hr {
     border-top-color: #B05D33;
 }
+.res{
+    color: #B05D33;
+}
+
