@@ -97,3 +97,15 @@
 1. Creer page d'ajout de commentaire
 2. Creer page de réponse à un commentaire
 3. Creer page d'accueil
+4. Afficher les commentaires par article
+5. Mise en page des liens video et instagram
+6. Ajout d'un message indiquant que le pays ou article tapé dans la recherche ne trouve rien
+
+>Objectif atteint :
+
+1. Ajout d'un article terminé
+2. Réponse a un commentaire non fait
+3. Page d'accueil mise en forme
+4. Affichage des commentaires d'un article terminé
+5. Mise en page des liens video et instagram terminé
+6. Message de recherche nulle ajouté
