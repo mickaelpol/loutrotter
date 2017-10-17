@@ -1,8 +1,54 @@
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12">
-            <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/e109264af6285355ad60361915a509a2.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+<header class="container">
+<div classs="row">
+<div class="text-left">
+    <ul class="list-unstyled list-inline">
         
+    </ul>  
+</div>   
+<div class="text-right">
+            <ul class = "list-unstyled list-inline">
+                
+                <li><a href="https://www.facebook.com/LouTrotterBlog">
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://twitter.com/Loutrotterblog">
+                <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://www.instagram.com/loutrotterblog/">
+                <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw">
+                <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                </a></li>
+            </ul>
+</div>
+
+</div>
+<div class="row">
+
+    <h1 class="titre text-center">
+    <img class="logoA" src="assets/img/Logo_Loutrotter.png" alt="Logo">    
+    Lou Trotter
+    </h1>
+    </div>
+</header>
+<div class="container">
+        <div class="col-sm-offset-2 col-xs-8">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Eos vel inventore deserunt aliquam. Deleniti, aut quibusdam 
+            praesentium consectetur, obcaecati recusandae quam magni 
+            cum iusto error voluptatum enim itaque, corporis minus.
+            </p>
+            <!-- SnapWidget -->
+            <!-- SnapWidget -->
+        <div class="cadre">
+        <iframe src="https://snapwidget.com/embed/456797" class="snapwidget-widget center-block instaA" 
+        allowTransparency="true" frameborder="0" scrolling="no" ></iframe>
+        </div>
         </div>
     </div>
+    
+    
 </div>  
+<script src="https://snapwidget.com/js/snapwidget.js"></script>

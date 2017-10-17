@@ -198,10 +198,24 @@ i {
 }
 .insta{
     height: 200px;
+
+}
+.instaA{
+    overflow:hidden; 
+    width:50%;
+   
+}
+.cadre, .cadre:hover{
+    border-radius: 15%;
+}
+.logoA{
+    width:10%;
+
     margin-top: 60px;
     margin-bottom: 60px;
 }
 .link{
     color:inherit;
     text-decoration: none;
+
 }
