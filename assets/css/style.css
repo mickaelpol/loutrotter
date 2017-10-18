@@ -65,9 +65,18 @@ i {
     background: #CFEB00;
     color:#A65E35;
 }
+
 .valider:focus, .valider:hover {
 	background: #CFEB00;
 	color: #A65E35;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus  {
+    background: #CFEB00;
+    border: 1px solid #A65E35;
+    color:#A65E35;
+}
+.pagination > li:last-child > a, .pagination > li:last-child > span {
+    color:#A65E35;
 }
 .lien{
     color: #A6602A;
@@ -99,6 +108,19 @@ i {
     border: none;
     color: #834A1E;
     box-shadow: 1px 3px 20px #000;
+}
+.btn-info {
+    background-color: #a9d81a;
+    border: 1px solid #A6602A;
+    color: #A6602A;
+    margin-top: 25px;
+}
+.btn-info:hover, .btn-info:focus {
+    background-color: #8dbc00;
+    border: none;
+    color: #834A1E;
+    box-shadow: 1px 3px 20px #000;
+
 }
 
 .float-label-control { position: relative; margin-bottom: 1.5em; }
