@@ -9,7 +9,13 @@ body{
 .titre{
     font-family: 'Hamurz', sans-serif;
     font-size: 50px;
-    color:#CFEB00;
+    color:#CFEB00;.
+    text-shadow: 0px 0px 1px black;
+}
+.titre8{
+    font-family: 'Hamurz', sans-serif;
+    font-size: 80px;
+    color:#CFEB00;.
     text-shadow: 0px 0px 1px black;
 }
 .navbar, .navbar a {
@@ -120,35 +126,35 @@ i {
 
 
 @keyframes float-labels {
-0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-20% { font-size: 1.5em; opacity: 0; }
-30% { top: 0.1em; }
-50% { opacity: 0; font-size: 0.85em; }
-100% { top: -1em; opacity: 1; }
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
 }
 
 @-webkit-keyframes float-labels {
-0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-20% { font-size: 1.5em; opacity: 0; }
-30% { top: 0.1em; }
-50% { opacity: 0; font-size: 0.85em; }
-100% { top: -1em; opacity: 1; }
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: -1em; opacity: 1; }
 }
 
 @keyframes float-labels-bottom {
-0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-20% { font-size: 1.5em; opacity: 0; }
-30% { top: 0.1em; }
-50% { opacity: 0; font-size: 0.85em; }
-100% { top: 3em; opacity: 1; }
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
 }
 
 @-webkit-keyframes float-labels-bottom {
-0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
-20% { font-size: 1.5em; opacity: 0; }
-30% { top: 0.1em; }
-50% { opacity: 0; font-size: 0.85em; }
-100% { top: 3em; opacity: 1; }
+    0% { opacity: 1; color: #aaa; top: 0.1em; font-size: 1.5em; }
+    20% { font-size: 1.5em; opacity: 0; }
+    30% { top: 0.1em; }
+    50% { opacity: 0; font-size: 0.85em; }
+    100% { top: 3em; opacity: 1; }
 }
 
 .loader {
@@ -206,9 +212,9 @@ i {
     border-radius: 15%;
 }
 .logoA{
-    width:10%;
+    width:30%;
 
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 60px;
 }
 .link{
@@ -227,7 +233,17 @@ i {
 
 .res{
     color: #B05D33;
+    /*margin-top: 80px;*/
 }
+.res:hover {
+    border-bottom: 2px solid #BEFF00;
+}
+
+
+.bord {
+    border: 1px solid black;
+  
 .com {
     word-wrap : break-word;
+
 }
