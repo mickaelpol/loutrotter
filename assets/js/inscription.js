@@ -63,8 +63,8 @@ var egalMdp2 = $('#egalMdp2');
         } else {
             email.parent().removeClass("has-error").addClass("has-success");
             email2.parent().removeClass("has-error").addClass("has-success");
-            emplacement.html('');
-            emplacement2.html('');
+            egalEmail.html('');
+            egalEmail2.html('');
             return false;
         }
 
@@ -86,8 +86,8 @@ var egalMdp2 = $('#egalMdp2');
         } else {
             mdp.parent().removeClass('has-error').addClass('has-success');
             mdp2.parent().removeClass('has-error').addClass('has-success');
-            emplacement.html('');
-            emplacement2.html('');
+            egalMdp.html('');
+            egalMdp2.html('');
             return false;
         }
 
@@ -116,30 +116,34 @@ var egalMdp2 = $('#egalMdp2');
             e.preventDefault();
         }
         // verifie que les deux mots de passe soit identique
-        if (emailCorrespond(mail, mail2, egalEmail, egalEmail2, "Email", "Verification email")) {
+        if (emailCorrespond(mail, mail2, "Email", "Verification email")) {
             e.preventDefault();
         }
 
         // verifie si l'input est remplis
         if (testInput(pwd, inputErr)) {
             e.preventDefault();
+            console.log("pl00");
         }
 
         // verifie si l'input est remplis
         if (testInput(pwd2, inputErr)) {
             e.preventDefault();
+            console.log("pl00");
         }
 
         // verifie si les deux mots de passe soit égal
         if (egaliteMdp(pwd, pwd2, "Mot de passe", "Verification du mot de passe")) {
             e.preventDefault();
+            console.log("pl00");
         }
 
         // verifie la longueur du mot de passe
         if (lengthMdp(pwd, pwd2, longMdp, longMdp2)) {
             e.preventDefault();
+            console.log("pl00");
         }
-
+        e.preventDefault();
 
 
 
