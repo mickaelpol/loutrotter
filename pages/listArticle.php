@@ -22,7 +22,7 @@ else{
         <div class="container">
             <div class="row ">
                 <div class="col-xs-4 col-xs-offset-4">
-                    <h3 class="text-center">Aucun article de disponible pour ce pays.</h3>
+                    <h3 class="text-center animated zoomInRight">Aucun article de disponible pour ce pays.</h3>
                 </div>
             </div>
         </div>

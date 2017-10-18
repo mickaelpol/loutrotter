@@ -20,13 +20,13 @@ if (!isset($_SESSION['admin'])) {
     <br>
     <div class="row">
         <div class="col-xs-offset-2 col-xs-2">
-            <a href="?p=ajout-article" class="btn valider"><i class="fa fa-pencil-square-o"></i> Creer un article</a>
+            <a href="?p=ajout-article" class="btn btn-success valider"><i class="fa fa-pencil-square-o"></i> Creer un article</a>
         </div>
         <div class="col-xs-offset-1 col-xs-2">
-            <a href="?p=addPays" class="btn valider"><i class="fa fa-globe"></i> Ajouter un pays</a>
+            <a href="?p=addPays" class="btn btn-success valider"><i class="fa fa-globe"></i> Ajouter un pays</a>
         </div>
         <div class="col-xs-offset-1 col-xs-2">
-            <a href="?p=listeUsr" class="btn valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
+            <a href="?p=listeUsr" class="btn btn-success valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
         </div>
     </div>
     <div class=" row">

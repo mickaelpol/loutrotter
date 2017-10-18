@@ -82,13 +82,17 @@ i {
     color: #A6602A;
 }
 .jumbotron{
-    background: #CFEB00;
-    border: 2px solid #B05D33;
+    background: rgba(190, 255, 0, 0.6);
+    box-shadow: 0px 0px 20px black;
 }
 .jumbotron a{
     color:#A65E35;
 }
 
+.dropdown-menu {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
 
 .formulaireCo {
     margin-top: 2%;
@@ -97,13 +101,16 @@ i {
 .formulaireCo input {
     color: #A65E35;
 }
+.shadowTxt {
+    text-shadow: 0px 0px 1px #BEFF00;
+}   
 
-.btn-success, .btn-success:focus  {
+.btn-success  {
     background-color: #BEFF00;
     border: none;
     color: #A6602A;
 }
-.btn-success:hover {
+.btn-success:hover, .btn-success:focus {
     background-color: #ADE602;
     border: none;
     color: #834A1E;
@@ -119,7 +126,7 @@ i {
     background-color: #8dbc00;
     border: none;
     color: #834A1E;
-    box-shadow: 1px 3px 20px #000;
+    box-shadow: 0px 0px 10px #000;
 
 }
 
@@ -265,8 +272,11 @@ i {
 
 .bord {
     border: 1px solid black;
-
+}
 .com {
     word-wrap : break-word;
 
+}
+.pagination > li > a, .pagination > li > span {
+    color: #B05D33;
 }

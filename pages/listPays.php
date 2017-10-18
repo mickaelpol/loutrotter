@@ -26,7 +26,7 @@ if (empty($result)) {
     <div class="container">
         <div class="row ">
             <div class="col-xs-4 col-xs-offset-4">
-                <h3 class="text-center">Oops le Loutrotter n'a pas encore écrit d'article pour ce continent!</h3>
+                <h3 class="text-center animated zoomInLeft">Oops le Loutrotter n'a pas encore écrit d'article pour ce continent!</h3>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@ if (empty($result)) {
                 <?php foreach($result as $key=>$value):  ?>
                     <div class="col-sm-12 jumbotron">
                         <div class="col-sm-4">
-                            <h2 class="text-capitalize"><u><?=  $value['pay_nom']; ?></u></h2>
+                            <h2 class="text-capitalize shadowTxt"><u><?=  $value['pay_nom']; ?></u></h2>
                         </div>
                         <div class="col-sm-4 col-sm-offset-4">
                             <p><a class="btn btn-info pull-right" href="?p=listeArt&pay=<?=  $value['pay_oid']; ?>">Découvrir</a></p>

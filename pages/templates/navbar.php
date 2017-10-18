@@ -20,7 +20,7 @@ if (isset($_SESSION['admin'])) {
               <span class="glyphicon glyphicon-th-list"></span>
             </a>
 
-            <ul class="dropdown-menu list-inline valider nav navbar-nav">
+            <ul class="dropdown-menu list-inline valider nav navbar-nav animated fadeInLeft">
               <div class="col-sm-2 text-center text-uppercase cont">
                 <li class="activé"><a href="?p=listPays&cont=5">Europe</a></li>
               </div>
