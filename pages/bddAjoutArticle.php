@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (!isset($_SESSION['admin'])) {
     header("Location: ?p=accueil");
@@ -15,10 +15,13 @@ $article_contenu_monuments = htmlspecialchars($_POST['monuments_content'], ENT_Q
 $article_contenu_culture = htmlspecialchars($_POST['culture_content'], ENT_QUOTES);
 $article_video = htmlspecialchars($_POST['article_video'],ENT_QUOTES);
 $article_images = htmlspecialchars($_POST['article_images'], ENT_QUOTES);
-$date = date('d-m-y');
+
 
 $sql_ajout_article = sprintf('INSERT INTO art_article (art_date ,art_titre, art_pay_oid, art_contenu_lieux, art_contenu_monuments, art_contenu_culture, art_lienvideo, art_lieninsta)
-    VALUES ("%s","%s", %d, "%s", "%s", "%s", "%s", "%s")',$date, $article_titre, $article_pays, $article_contenu_lieux, $article_contenu_monuments, $article_contenu_culture, $article_video, $article_images);
+    VALUES (now(),"%s", %d, "%s", "%s", "%s", "%s", "%s")',$article_titre, $article_pays, $article_contenu_lieux, $article_contenu_monuments, $article_contenu_culture, $article_video, $article_images);
+
+// INSERT INTO art_article (art_oid, art_contenu_lieux, art_contenu_monuments, art_contenu_culture, art_titre, art_date, art_pay_oid)
+// VALUES (1, 'lieux', 'monuments', 'culture', 'titre', now(), 1);
 try {
     $bdd->query($sql_ajout_article);
     ?>

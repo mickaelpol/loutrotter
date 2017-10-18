@@ -20,16 +20,16 @@ $form = "<form method='POST'>
 
 
 if (!isset($_SESSION['id'])) {
-    $form = "<h6 class='text-danger text-center'>Vous ne pouvez pas poster de message si pas inscris</h6>";
+    $form = "<h6 class='text-danger text-center'>Inscrivez vous pour poster un commentaire </h6>";
 }
 
 if (isset($_POST['validCom'])) {
 
     if (!empty($_POST['commentaire'])) {
         $com = htmlspecialchars($_POST['commentaire'],ENT_QUOTES);
-        $date = date('d-m-y');
+        $date = date('y-m-d');
         $sql = sprintf("insert into com_commentaire (com_art_oid, com_uti_oid, com_contenu, com_date)
-            values (%d , %d, '%s', '%s')",$article_Id, $_SESSION['id'],$com,$date);
+            values (%d , %d, '%s' '%s', ",$article_Id, $_SESSION['id'],$com, $date);
 
         $bdd->query($sql);
         // traitement de la requetes
@@ -38,8 +38,8 @@ if (isset($_POST['validCom'])) {
 
 }
 $selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, com_date from uti_utilisateur, com_commentaire
-    where uti_oid = com_uti_oid and com_art_oid = %d",$article_Id);
-$comSel = $bdd->query($selecCom)->fetchAll();
+    where uti_oid = com_uti_oid and com_art_oid = %d", $article_Id);
+$reponse = $bdd->query($selecCom);
 
 ?>
 
@@ -100,23 +100,34 @@ $comSel = $bdd->query($selecCom)->fetchAll();
     </div>
 
 </div>
-<div class="container espCom">
-    <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-            <div class="pre-scrollable jumbotron">
-                <?php foreach ($comSel as $key => $value) : ?>
 
-                    <ul class="list-unstyled">
-                        <li><h4><?= $value['uti_prenom'] ?></h4></li>
-                        <li><p><?= $value['com_contenu'] ?></p></li>
-                        <li class="text-right"><?= $value['com_date'] ?></li>
-                    </ul>
-                    <hr class="sepCom">
-                <?php endforeach; ?>
+<!--  AFFICHAGE DES COMMENTAIRES  -->
+<div class="container espCom">
+    <div id="test-list">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1 list jumbotron">
+                <?php while($donnees = $reponse->fetch()){  ?>
+                <ul class="list-unstyled">
+                    <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
+                    <li><p><?= $donnees['com_contenu'] ?></p></li>
+                    <li><?= $donnees['com_date'] ?></li>
+                <hr>
+                </ul>
+                <?php
+            }
+            $reponse->closeCursor();
+            ?>
             </div>
+        </div>
+        <div class="text-center">
+            <ul class="pagination"></ul>
         </div>
     </div>
 </div>
+
+
+<script type="text/javascript" src="./assets/js/paginationCom.js"></script>
+
 
 
 
