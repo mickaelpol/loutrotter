@@ -43,7 +43,7 @@ $result = $bdd->query($req)->fetch();
 
                 </p>
             </div>
-            <div class='row insta'>
+            <div class='row'>
                 <?= htmlspecialchars_decode($result['art_lieninsta'],ENT_QUOTES)?>
             </div>
         </section>
