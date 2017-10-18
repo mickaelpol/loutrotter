@@ -1,4 +1,11 @@
 <?php 
+    if (!isset($_SESSION['admin'])) {
+        header("Location: ?p=accueil");
+    } else {
+        if ($_SESSION['admin'] === "0") {
+            header("Location: ?p=accueil");
+        }
+    }
     $article_id = htmlspecialchars($_GET['id']);
     $requete = sprintf("SELECT *, DATE_FORMAT(com_date, '%%d/%%m/%%y') as dat 
     FROM com_commentaire, uti_utilisateur
