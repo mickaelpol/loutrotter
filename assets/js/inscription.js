@@ -123,27 +123,22 @@ var egalMdp2 = $('#egalMdp2');
         // verifie si l'input est remplis
         if (testInput(pwd, inputErr)) {
             e.preventDefault();
-            console.log("pl00");
         }
 
         // verifie si l'input est remplis
         if (testInput(pwd2, inputErr)) {
             e.preventDefault();
-            console.log("pl00");
         }
 
         // verifie si les deux mots de passe soit égal
         if (egaliteMdp(pwd, pwd2, "Mot de passe", "Verification du mot de passe")) {
             e.preventDefault();
-            console.log("pl00");
         }
 
         // verifie la longueur du mot de passe
         if (lengthMdp(pwd, pwd2, longMdp, longMdp2)) {
             e.preventDefault();
-            console.log("pl00");
         }
-        e.preventDefault();
 
 
 
