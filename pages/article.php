@@ -2,7 +2,7 @@
 if(empty($_GET['art'])){
     header("Location: ?p=accueil");
 }
-$req = sprintf("select * from art_article where art_oid = %d",$_GET['art']);
+$req = sprintf("select  * from art_article where art_oid = %d",$_GET['art']);
 $result = $bdd->query($req)->fetch();
 
 
@@ -30,15 +30,15 @@ if (isset($_POST['validCom'])) {
         $com = htmlspecialchars($_POST['commentaire'],ENT_QUOTES);
         $date = date('y-m-d');
         $sql = sprintf("insert into com_commentaire (com_art_oid, com_uti_oid, com_contenu, com_date)
-            values (%d , %d, '%s' '%s', ",$article_Id, $_SESSION['id'],$com, $date);
-
+            values (%d , %d, '%s' ,'%s')",$article_Id, $_SESSION['id'],$com, $date);
+        
         $bdd->query($sql);
         // traitement de la requetes
 
     }
 
 }
-$selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, com_date from uti_utilisateur, com_commentaire
+$selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, DATE_FORMAT(com_date, '%%d/%%m/%%y') as dat from uti_utilisateur, com_commentaire
     where uti_oid = com_uti_oid and com_art_oid = %d", $article_Id);
 $reponse = $bdd->query($selecCom);
 
@@ -112,7 +112,7 @@ $reponse = $bdd->query($selecCom);
                 <ul class="list-unstyled">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
                     <li><p><?= $donnees['com_contenu'] ?></p></li>
-                    <li><?= $donnees['com_date'] ?></li>
+                    <li class='text-right'><?= $donnees['dat'] ?></li>
                 <hr>
                 </ul>
                 <?php
