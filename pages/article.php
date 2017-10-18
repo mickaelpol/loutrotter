@@ -111,14 +111,14 @@ $reponse = $bdd->query($selecCom);
                 <?php while($donnees = $reponse->fetch()){  ?>
                 <ul class="list-unstyled">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
-                    <li><p><?= $donnees['com_contenu'] ?></p></li>
+                    <li><p class="com"><?= $donnees['com_contenu'] ?></p></li>
                     <li class='text-right'><?= $donnees['dat'] ?></li>
-                <hr>
+                    <li><hr></li>
                 </ul>
                 <?php
-            }
-            $reponse->closeCursor();
-            ?>
+                }
+                    $reponse->closeCursor();
+                ?>
             </div>
         </div>
         <div class="text-center">

@@ -228,4 +228,6 @@ i {
 .res{
     color: #B05D33;
 }
-
+.com {
+    word-wrap : break-word;
+}
