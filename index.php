@@ -93,8 +93,16 @@ if($p === 'ajout-article'){
     if ($p === 'recherche') {
         include('pages/recherche.php');
     }
-
-
+    if ($p === 'listCom') {
+        include('pages/listCommentaire.php');
+    }
+    if ($p === 'supCom') {
+        include('pages/bddSupCom.php');
+    }
+    if ($p === 'supComArt') {
+        include('pages/supComArt.php');
+    }
+    
 
     
 $content = ob_get_clean();

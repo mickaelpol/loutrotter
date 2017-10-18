@@ -38,7 +38,7 @@ if (isset($_POST['validCom'])) {
     }
 
 }
-$selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, DATE_FORMAT(com_date, '%%d/%%m/%%y') as dat from uti_utilisateur, com_commentaire
+$selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, com_oid, DATE_FORMAT(com_date, '%%d/%%m/%%y') as dat from uti_utilisateur, com_commentaire
     where uti_oid = com_uti_oid and com_art_oid = %d", $article_Id);
 $reponse = $bdd->query($selecCom);
 
@@ -111,6 +111,7 @@ $reponse = $bdd->query($selecCom);
                 <?php while($donnees = $reponse->fetch()){  ?>
                 <ul class="list-unstyled">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
+                    <?= $donnees['uti_oid'] === $_SESSION['id'] ? '<li class="text-right"> <a href="?p=supComArt&id='.$donnees["com_oid"].'&art='.$article_Id.'"><i class="fa fa-trash fa-2x"></i></a></li>' : '' ?>
                     <li><p class="com"><?= $donnees['com_contenu'] ?></p></li>
                     <li class='text-right'><?= $donnees['dat'] ?></li>
                     <li><hr></li>
@@ -126,6 +127,5 @@ $reponse = $bdd->query($selecCom);
         </div>
     </div>
 </div>
-
 
 <script type="text/javascript" src="./assets/js/paginationCom.js"></script>
