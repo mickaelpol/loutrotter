@@ -53,7 +53,7 @@ if (!isset($_SESSION['admin'])) {
                         <tr>
                             <td class="text-center"><a class="link" href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></td>
                             <td class="text-center"><?= $donnees['pay_nom'] ?></td>
-                            <td class="text-center"><a class="btn lien" href="#"><i class="fa fa-comments-o fa-2x"></i></a></td>
+                            <td class="text-center"><a class="btn lien" href="?p=listCom&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-comments-o fa-2x"></i></a></td>
                             <td class="text-center"><a class="btn lien" href="?p=edit-article&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-pencil fa-2x"></i></a></td>
                             <td class="text-center">
                                 <a class="btn lien" href="#" data-toggle="modal" data-target="#modalSupArticle<?= $donnees['art_oid'] ?>"><i class="fa fa-trash fa-2x"></i></a>
