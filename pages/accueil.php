@@ -1,7 +1,7 @@
 <header class="container">
     <div class="row">
         <div class="col-sm-5 col-sm-offset-3">
-            <h1 class="titre8 text-center">
+            <h1 class="titreAcc text-center">
 
                 Lou Tr<img class="logoA" src="assets/img/Logo_Loutrotter.png" alt="Logo"/>tter
             </h1>
