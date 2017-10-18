@@ -67,6 +67,7 @@ i {
 }
 .jumbotron{
     background: #CFEB00;
+    border: 2px solid #B05D33;
 }
 .jumbotron a{
     color:#A65E35;
@@ -219,6 +220,7 @@ i {
 .espCom {
     margin-top: 100px;
 }
+
 .jumbotron hr {
     border-top-color: #B05D33;
 }
