@@ -239,6 +239,11 @@ i {
     border-bottom: 2px solid #BEFF00;
 }
 
+
 .bord {
     border: 1px solid black;
+  
+.com {
+    word-wrap : break-word;
+
 }
