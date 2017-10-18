@@ -21,7 +21,13 @@ $form = "<form method='POST'>
 
 
 if (!isset($_SESSION['id'])) {
-    $form = "<h6 class='text-danger text-center'>Inscrivez vous pour poster un commentaire </h6>";
+    $form = "<h6>Connectez vous pour poster des comms</h6><form class='animated hinge' method='POST'>
+    <div class='form-group'>
+    <label for='com'>Commentaire :</label>
+    <textarea class='form-control' maxlength=255 name='commentaire' id='commentaire' cols='10' rows='5'></textarea>
+    </div>
+    <input name='validCom' class='btn valider btn-md btn-success pull-right' type='submit' value='Envoyer'>
+    </form>";
 }
 
 if (isset($_POST['validCom'])) {

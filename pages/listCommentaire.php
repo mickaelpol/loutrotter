@@ -19,7 +19,7 @@
 </div>
 <!--  AFFICHAGE DES COMMENTAIRES  -->
 <div class="container espCom">
-    <div id="test-list">
+    <div id="list-com">
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 list jumbotron">
                 <?php while($donnees = $reponse->fetch()){  ?>
