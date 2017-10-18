@@ -63,8 +63,8 @@ var egalMdp2 = $('#egalMdp2');
         } else {
             email.parent().removeClass("has-error").addClass("has-success");
             email2.parent().removeClass("has-error").addClass("has-success");
-            emplacement.html('');
-            emplacement2.html('');
+            egalEmail.html('');
+            egalEmail2.html('');
             return false;
         }
 
@@ -86,8 +86,8 @@ var egalMdp2 = $('#egalMdp2');
         } else {
             mdp.parent().removeClass('has-error').addClass('has-success');
             mdp2.parent().removeClass('has-error').addClass('has-success');
-            emplacement.html('');
-            emplacement2.html('');
+            egalMdp.html('');
+            egalMdp2.html('');
             return false;
         }
 
@@ -116,7 +116,7 @@ var egalMdp2 = $('#egalMdp2');
             e.preventDefault();
         }
         // verifie que les deux mots de passe soit identique
-        if (emailCorrespond(mail, mail2, egalEmail, egalEmail2, "Email", "Verification email")) {
+        if (emailCorrespond(mail, mail2, "Email", "Verification email")) {
             e.preventDefault();
         }
 
@@ -139,7 +139,6 @@ var egalMdp2 = $('#egalMdp2');
         if (lengthMdp(pwd, pwd2, longMdp, longMdp2)) {
             e.preventDefault();
         }
-
 
 
 

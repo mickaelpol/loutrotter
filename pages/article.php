@@ -5,6 +5,7 @@ if(empty($_GET['art'])){
 $req = sprintf("select * from art_article where art_oid = %d",$_GET['art']);
 $result = $bdd->query($req)->fetch();
 
+
 $article_Id = $_GET['art'];
 
 
@@ -41,6 +42,7 @@ $selecCom = sprintf("select  uti_oid, uti_prenom , com_contenu, com_date from ut
     where uti_oid = com_uti_oid and com_art_oid = %d", $article_Id);
 $reponse = $bdd->query($selecCom);
 
+
 ?>
 
 
@@ -53,7 +55,6 @@ $reponse = $bdd->query($selecCom);
         <div class="col-sm-offset-3 col-sm-6 video">
             <?= htmlspecialchars_decode($result['art_lienvideo'],ENT_QUOTES)?>
         </div>
-
     </div>
     <div class="container">
         <section class='col-sm-offset-1 col-sm-9'>
@@ -80,13 +81,14 @@ $reponse = $bdd->query($selecCom);
 
                 </p>
             </div>
-            <div class='row insta'>
+            <div class='row'>
                 <?= htmlspecialchars_decode($result['art_lieninsta'],ENT_QUOTES)?>
             </div>
         </section>
 
     </div>
 </main>
+
 
 <div class="container espCom">
     <div class="row">
@@ -127,8 +129,3 @@ $reponse = $bdd->query($selecCom);
 
 
 <script type="text/javascript" src="./assets/js/paginationCom.js"></script>
-
-
-
-
-
