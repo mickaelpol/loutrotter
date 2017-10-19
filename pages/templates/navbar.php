@@ -22,7 +22,7 @@ if (isset($_SESSION['admin'])) {
 
             <ul class="dropdown-menu list-inline valider nav navbar-nav animated fadeInLeft">
               <div class="col-sm-2 text-center text-uppercase cont">
-                <li class="activé"><a href="?p=listPays&cont=5">Europe</a></li>
+                <li><a href="?p=listPays&cont=5">Europe</a></li>
               </div>
 
               <div class="col-sm-2 text-center text-uppercase cont">
