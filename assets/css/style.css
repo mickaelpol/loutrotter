@@ -3,6 +3,7 @@ body{
     font-family: 'Caviar', sans-serif;
     font-size: 18px;
     color:#A65E35;
+    padding: 0;
 }
 
 .titre {
@@ -280,3 +281,6 @@ i {
 .pagination > li > a, .pagination > li > span {
     color: #B05D33;
 }
+/* .tailleWidget {
+    position: relative;
+} */
