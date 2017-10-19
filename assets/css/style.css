@@ -281,6 +281,16 @@ i {
 .pagination > li > a, .pagination > li > span {
     color: #B05D33;
 }
-/* .tailleWidget {
-    position: relative;
-} */
+.metionLegale {
+    margin-top: 60px;
+}
+.copyright {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.reseauSociaux {
+    margin-top: 10px;
+}
+.partenaire {
+    margin-top: 20px;
+}
