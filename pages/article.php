@@ -65,15 +65,18 @@ $reponse = $bdd->query($selecCom);
     <div class="container">
         <section class='col-sm-offset-1 col-sm-9'>
             <div class="row">
-                <h3 class='titre'><i class="fa fa-map-signs" aria-hidden="true"></i>
-                Lieux</h3>
+                <h3 class='titre'>
+
+                <?= !empty($result['art_contenu_lieux']) ? '<i class="fa fa-map-signs" aria-hidden="true"></i>Lieux' : "" ?>
+                </h3>
                 <p class='text-left'>
                     <?= $result['art_contenu_lieux'] ?>
                 </p>
 
             </div>
             <div class="row">
-                <h3 class='titre text-right'>Monument<i class="fa fa-university" aria-hidden="true"></i>
+                <h3 class='titre text-right'> 
+                <?= !empty($result['art_contenu_monuments']) ? 'Monument<i class="fa fa-university" aria-hidden="true"></i>' : "" ?>
                 </h3>
                 <p class='text-right'>
                     <?= $result['art_contenu_monuments'] ?>
@@ -81,7 +84,9 @@ $reponse = $bdd->query($selecCom);
                 </p>
             </div>
             <div class="row">
-                <h3 class='titre'>Culture</h3>
+                <h3 class='titre'>
+                <?= !empty($result['art_contenu_culture']) ? 'Culture' : "" ?>
+                </h3>
                 <p class='text-left'>
                     <?= $result['art_contenu_culture'] ?>
 
