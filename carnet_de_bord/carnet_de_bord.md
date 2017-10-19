@@ -103,9 +103,35 @@
 
 >Objectif atteint :
 
-1. Ajout d'un article terminé
+1. Ajout d'un commentaire terminé
 2. Réponse a un commentaire non fait
 3. Page d'accueil mise en forme
 4. Affichage des commentaires d'un article terminé
 5. Mise en page des liens video et instagram terminé
 6. Message de recherche nulle ajouté
+
+--------------------------------------
+
+>7 ieme journée : Objectif
+
+1. test des pages et du site 
+2. Verifications de gestion des session sur les pages du site
+3. Pouvoir supprimer son commentaire (user/admin)
+4. Changement de l'affichage des commentaires
+
+>Objectif atteint :
+
+1. Test des pages du site faire , reste à verifier une dernière fois .
+2. Gestion des sessions terminé 
+3. Suppression de son commentaire (user/admin)
+4. Changement de l'affichage des commentaires
+
+-------------------------------------
+
+>8 ieme journée : Objectif
+
+1. Heberger sur webhost et configurer l'envoi d'email
+2. Commencer le responsive 
+3. Regarder pour le design 
+
+>Objectif atteint :
