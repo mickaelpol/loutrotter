@@ -12,7 +12,7 @@ if (isset($_SESSION['admin'])) {
 
 
 <div class="row">
-    <!-- <div class="col-sm-8 col-sm-offset-2"> -->
+
       <nav class="hidden-xs navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -72,7 +72,7 @@ if (isset($_SESSION['admin'])) {
       </nav>
 
 
-    <!-- </div> -->
+
   </div>
 
     <div class="visible-xs">
@@ -82,30 +82,53 @@ if (isset($_SESSION['admin'])) {
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-th-list">
               </button>
-              <a class="navbar-brand" href="?p=accueil">Loutrotter</a>
             
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="?p=contact">Contact</a></li>
-                <div class="col-xs-12">
-                <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
-                <div class="input-group">
-                    <input name="s" type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                        <button class="btn" type="submit">
+                  <div class="col-xs-12">
+                    <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
+                      <div class="input-group">
+                        <input name="s" type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                          <button class="btn valider" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
-                        </button>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <li><a href="?p=accueil">Loutrotter</a></li>
+                  <li><a href="?p=contact">Contact</a></li>
+                  <li> <?= $btnUser ?></li>
+                  <li><?= $btnCo ?></li>
+                  <li><?= $btnAdmin ?></li>
+                  <li>
+                    <a data-toggle="collapse" data-target="#continent"><i class="fa fa-globe" aria-hidden="true"></i> Continent</a>
+                      <div id="continent" class="collapse">
+                        <ul class="list-inline margeIco">
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=5"><i class="mg map-wrld-eu mg-2x"></i></a></li>
+                          </div>
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=2"><i class="mg map-wrld-na mg-2x"></i></a></li>
+                          </div>
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=3"><i class="mg map-wrld-sa mg-2x"></i></a></li>
+                          </div>
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=4"><i class="mg map-wrld-as mg-2x"></i></a></li>
+                          </div>
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=1"><i class="mg map-wrld-af mg-2x"></i></a></li>
+                          </div>
+                          <div class="col-xs-2">
+                            <li><a href="?p=listPays&cont=6"><i class="mg map-wrld-oc mg-2x"></i></a></li>
+                          </div>
+                        </ul>
                     </div>
+                    </li>
                 </div>
-            </form>
-                </div>
-                <li> <?= $btnUser ?></li>
-                <li><?= $btnCo ?></li>
-                <li><?= $btnAdmin ?></li>
-              </div>
-            </ul>
+              </ul>
           </div>
         </nav>
       </div>
-

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/police.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/mapglyphs-free-2.0/mapglyphs-free-2.0/mapglyphs/2.0/mapglyphs.css" rel="stylesheet">
     <!-- ////////////////////// BALISE TITLE A FINIR DE REMPLIR /////////////////////////// -->
     <title>Loutrotter voyages partage découverte cuisine continent pays avion vol bateau </title>
 </head>
