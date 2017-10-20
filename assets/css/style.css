@@ -263,11 +263,18 @@ i {
 }
 
 .res{
-    color: #B05D33;
-    /*margin-top: 80px;*/
+    width: 40px;
+    height: 40px;
 }
 .res:hover {
-    border-bottom: 2px solid #BEFF00;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px black;
+}
+.resResp{
+    margin-top: 2%;
+    padding: 10%;
+    width: 40px;
+    height: 40px;
 }
 
 
@@ -297,3 +304,66 @@ i {
 .margeIco {
     margin-top: 10px;
 }
+.social {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.social img {
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+}
+.fond_face {
+    top: -40px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #4267B2;
+    position: absolute;
+    transition: 0.5s;
+}
+.fond_twi {
+    top: -40px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #5DD7FC;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.fond_insta {
+    top: -40px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #E1465A;
+    position: absolute;
+    transition: 0.5s;
+}
+.fond_yout {
+    top: -40px;
+    z-index: 1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #FF0000;
+    position: absolute;
+    transition: 0.5s;
+}
+
+
+.social:hover .fond_face, .social:hover .fond_twi, .social:hover .fond_insta, .social:hover .fond_yout {
+    top: 0;
+}
+

@@ -12,20 +12,16 @@
         </div>
         <div class="col-lg-4 col-sm-4 col-xs-12 hidden-xs hidden-sm hidden-md">
             <div class="text-right">
-                <ul class = "list-unstyled list-inline">
+                <ul class = "list-unstyled list-inline conteneur">
 
-                    <li><a href="https://www.facebook.com/LouTrotterBlog">
-                        <i class="fa fa-facebook-official fa-2x res" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="https://twitter.com/Loutrotterblog">
-                        <i class="fa fa-twitter-square fa-2x res" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="https://www.instagram.com/loutrotterblog/">
-                        <i class="fa fa-instagram fa-2x res" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw">
-                        <i class="fa fa-youtube-square fa-2x res" aria-hidden="true"></i>
-                    </a></li>
+                    <li><a class="social" href="https://www.facebook.com/LouTrotterBlog"><img src="assets/img/Facebook_sfond.png" alt=""><div class="fond_face"></div></a></li>
+
+                    <li><a class="social" href="https://twitter.com/Loutrotterblog"><img src="assets/img/Twitter_sfond.png" alt=""><div class="fond_twi"></div></a></li>
+
+                    <li><a class="social" href="https://www.instagram.com/loutrotterblog/"><img src="assets/img/Instagram_sfond.png" alt=""><div class="fond_insta"></div></a></li>
+
+                    <li><a class="social" href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw"><img src="assets/img/Youtube_sfond.png" alt=""><div class="fond_yout"></div></a></li>
+
                 </ul>
             </div>
         </div>
