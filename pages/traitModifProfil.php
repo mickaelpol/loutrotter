@@ -22,14 +22,14 @@ if (isset($_POST['validForm'])) {
 	</div>";
 
 
-	if (!empty($_POST['nom']) & !empty($_POST['prenom']) & !empty($_POST['email'])) {
+	if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email'])) {
 
 		$erreurMessage = "";
-
+		
 		$nom = htmlspecialchars($_POST['nom'], ENT_QUOTES);
 		$prenom = htmlspecialchars($_POST['prenom'], ENT_QUOTES);
 		$email = htmlspecialchars($_POST['email'], ENT_QUOTES);
-
+		$_SESSION['nom']=$nom;
 		$update = sprintf("UPDATE uti_utilisateur SET uti_nom='%s', uti_prenom='%s', uti_mail='%s'
 			WHERE uti_oid='%d'", $nom, $prenom, $email, $_SESSION["id"]);
 
