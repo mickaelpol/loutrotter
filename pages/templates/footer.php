@@ -14,36 +14,36 @@
         <div class="col-sm-2 col-sm-offset-1 hidden-xs metionLegale">
             Mention légales
         </div>
-        <div class="col-sm-4 col-sm-offset-1 col-xs-6 reseauSociaux">
+        <div class="col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-2 reseauSociaux">
             Réseau sociaux
             <div>
                 <ul class = "list-unstyled list-inline hidden-xs">
                     <li><a href="https://www.facebook.com/LouTrotterBlog">
-                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+                        <img class="res" src="assets/img/Logo_facebook" alt="logo facebook">
                     </a></li>
                     <li><a href="https://twitter.com/Loutrotterblog">
-                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
+                        <img class="res" src="assets/img/Logo_twitter" alt="logo twitter">
                     </a></li>
                     <li><a href="https://www.instagram.com/loutrotterblog/">
-                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        <img class="res" src="assets/img/Logo_instagram" alt="logo instagram">
                     </a></li>
                     <li><a href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw">
-                    <i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i>
+                        <img class="res" src="assets/img/Logo_youtube" alt="logo youtube">
                     </a></li>
                 </ul>
                 <div class="row visible-xs ">
                     <ul class = "list-unstyled list-inline">
                         <li><a href="https://www.facebook.com/LouTrotterBlog">
-                        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                            <img class="resResp" src="assets/img/Logo_facebook" alt="logo facebook">
                         </a></li>
                         <li><a href="https://twitter.com/Loutrotterblog">
-                        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <img class="resResp" src="assets/img/Logo_twitter" alt="logo twitter">
                         </a></li>
                         <li><a href="https://www.instagram.com/loutrotterblog/">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <img class="resResp" src="assets/img/Logo_instagram" alt="logo instagram">
                         </a></li>
                         <li><a href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw">
-                        <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                            <img class="resResp" src="assets/img/Logo_youtube" alt="logo youtube">
                         </a></li>
                     </ul>
                 </div>
