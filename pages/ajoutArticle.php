@@ -74,7 +74,7 @@ if (!isset($_SESSION['admin'])) {
                 <div class="row">
                     <!-- Lien vers galerie Instagram -->
                     <div class="form-group col-xs-8">
-                        <label for="images">Lien vers la galerie Instagram</label>
+                        <label for="images">Lien vers la galerie Instagram (<a target=_blank class="link" href="https://lightwidget.com/">lightwidget</a>)</label>
                         <input class="form-control" id="images" type="text" name="article_images">
                     </div>
                 </div>
