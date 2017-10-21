@@ -367,3 +367,9 @@ i {
     top: 0;
 }
 
+.separation {
+    width: 80%;
+}
+.bot {
+    border-bottom: 1px solid black;
+}
