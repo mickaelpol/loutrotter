@@ -19,7 +19,7 @@
 
 <div class="container">
     <div class="row ">
-        <div class="col-lg-6 bord col-lg-offset-3 col-xs-12">
+        <div class="col-lg-6 col-lg-offset-3 col-xs-12">
             <h1 class="titre page-header text-center com">Commentaires de l'article :<br><?= $titre['art_titre'] ?></h1>
         </div>
     </div>
@@ -28,7 +28,7 @@
 <div class="container espCom">
     <div id="list-com">
         <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-10 bord col-lg-offset-1 list">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-lg-10 col-lg-offset-1 list">
                 <?php while($donnees = $reponse->fetch()){  ?>
                 <ul class="list-unstyled jumbotron">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
