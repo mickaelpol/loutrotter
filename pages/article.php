@@ -52,18 +52,18 @@ $reponse = $bdd->query($selecCom);
 ?>
 
 
-<header class="page-header container text-center">
+<header class="page-header container text-center col-lg-12 col-xs-12 com">
     <h1 class='titre'><?= $result['art_titre'] ?></h1>
 </header>
 <main class="container">
     <div class ='row'>
 
-        <div class="col-sm-offset-3 col-sm-6 video">
+        <div class="col-lg-offset-3 col-lg-6 col-xs-12">
             <?= htmlspecialchars_decode($result['art_lienvideo'],ENT_QUOTES)?>
         </div>
     </div>
-    <div class="container">
-        <section class='col-sm-offset-1 col-sm-9'>
+    <div class="container video">
+        <section class='col-lg-offset-1 col-lg-9 col-xs-10 col-xs-offset-1'>
             <div class="row">
                 <h3 class='titre'>
 
@@ -107,7 +107,7 @@ $reponse = $bdd->query($selecCom);
         <h6 class="text-danger text-center"><?= isset($notConnected)? $notConnected: "" ?></h6>
     </div>
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-lg-6 col-lg-offset-3 col-xs-10 col-xs-offset-1">
             <?= $form ?>
         </div>
     </div>
@@ -118,7 +118,7 @@ $reponse = $bdd->query($selecCom);
 <div class="container espCom">
     <div id="test-list">
         <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 list jumbotron">
+            <div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1 list jumbotron">
                 <?php while($donnees = $reponse->fetch()){  ?>
                 <ul class="list-unstyled">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>

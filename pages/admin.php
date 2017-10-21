@@ -98,10 +98,10 @@ if (!isset($_SESSION['admin'])) {
                         <div>Supprimer article</div>
                     </div>
                     <div class="col-xs-6 text-center list">
-                    <?php
+                            <?php
                             $rep = $bdd->query('SELECT * FROM art_article INNER JOIN pay_pays ON art_pay_oid = pay_oid');
                             while ($donnees = $rep->fetch()){
-                                ?>
+                            ?>
                         <div><a class="link" href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></div><br>
                         <div class=""><?= $donnees['pay_nom'] ?></div><br>
                         <div><a class="btn lien" href="?p=listCom&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-comments-o fa-2x"></i></a></div><br>
