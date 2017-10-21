@@ -102,10 +102,10 @@ if (!isset($_SESSION['admin'])) {
                             $rep = $bdd->query('SELECT * FROM art_article INNER JOIN pay_pays ON art_pay_oid = pay_oid');
                             while ($donnees = $rep->fetch()){
                             ?>
-                        <div><a class="link" href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></div><br>
-                        <div class=""><?= $donnees['pay_nom'] ?></div><br>
-                        <div><a class="btn lien" href="?p=listCom&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-comments-o fa-2x"></i></a></div><br>
-                        <div><a class="btn lien" href="?p=edit-article&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-pencil fa-2x"></i></a></div><br>
+                        <div class="com"><a class="link" href="?p=article&art=<?= $donnees['art_oid'] ?>"><?= $donnees['art_titre'] ?></a></div><br>
+                        <div class="com"><?= $donnees['pay_nom'] ?></div><br>
+                        <div class="com"><a class="btn lien" href="?p=listCom&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-comments-o fa-2x"></i></a></div><br>
+                        <div class="com"><a class="btn lien" href="?p=edit-article&id=<?= $donnees['art_oid'] ?>"><i class="fa fa-pencil fa-2x"></i></a></div><br>
                         <div>
                             <a class="btn lien" href="#" data-toggle="modal" data-target="#modalSupArticlexs<?= $donnees['art_oid'] ?>"><i class="fa fa-trash fa-2x"></i></a>
                             <!-- Modal -->
@@ -129,7 +129,7 @@ if (!isset($_SESSION['admin'])) {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div><br>
                         <?php
                             }
                             ?>
