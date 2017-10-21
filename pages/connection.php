@@ -41,12 +41,8 @@ if (isset($_POST['valid'])) {
                     $_SESSION['admin'] = $row['uti_isadmin'];
                     $_SESSION['id'] = $row['uti_oid'];
 
-                    $valide = '<div class="text-success"> Connection veuillez patientez vous allez être rediriger sinon cliquez sur ce <a href="?p=accueil">lien</a> pour être re diriger directement</div>';
-                    $loader = "<div class='container'>
-                    <div class='row'>
-                        <div id='loading' class='loader'></div>
-                    </div>
-                </div>";
+                    $valide = '<div class="text-success"> Connection en cours cliquez sur ce <a href="?p=accueil">lien</a> pour être re diriger</div>';
+                    $loader = "<div id='loading' class='loader'></div>";
                 if ($_SESSION["admin"] === "1") {
                     header('refresh:3;url=?p=admin');
                 }
@@ -84,7 +80,7 @@ if (isset($_POST['valid'])) {
         </div>
     </div>
 </div>
-<div class="col-sm-12">
+<div class="col-md-6 col-md-offset-3 col-">
     <div class="row">
         <div class="text-center">
             <?= isset($valide) ? $valide: "" ?> <br>
@@ -95,7 +91,7 @@ if (isset($_POST['valid'])) {
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 formulaireCo">
+        <div class="col-md-4 col-md-offset-4 col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 formulaireCo">
             <form method="post" role="form" id="connection">
                 <div class="form-group float-label-control">
                     <label for="email">Email</label>
