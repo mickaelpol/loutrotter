@@ -373,3 +373,13 @@ i {
 .bot {
     border-bottom: 1px solid black;
 }
+
+
+@media all and (max-width: 520px) {
+    iframe{
+        margin-left: 15px;
+        width: 300px; 
+        height:200px;
+
+    }
+}
