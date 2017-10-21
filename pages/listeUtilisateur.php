@@ -14,20 +14,20 @@ if (!isset($_SESSION['admin'])) {
 
 <div class="container">
     <div class="row ">
-        <div class="col-xs-6 col-xs-offset-3">
+        <div class="col-lg-6 col-lg-offset-3">
             <h1 class="titre page-header text-center">Liste des utilisateurs</h1>
         </div>
         <br>
     </div>
     <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
-            <table class="table table-bordered table-stripped">
+        <div class="col-lg-10 col-lg-offset-1">
+            <table class="table table-bordered table-stripped table-hover">
                 <thead>
                     <tr>
-                        <th class="valider text-center col-sm-3">Nom</th>
-                        <th class="valider text-center col-sm-3">Prénom</th>
-                        <th class="valider text-center col-sm-4">Adresse email</th>
-                        <th class="valider text-center col-sm-2">BAN / UNBANN</th>
+                        <th class="valider text-center col-lg-3">Nom</th>
+                        <th class="valider text-center col-lg-3">Prénom</th>
+                        <th class="valider text-center col-lg-4">Adresse email</th>
+                        <th class="valider text-center col-lg-2">BAN / UNBANN</th>
                     </tr>
                 </thead>
                 <tbody>

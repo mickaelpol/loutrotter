@@ -14,7 +14,7 @@
         <div class="col-sm-2 col-sm-offset-1 hidden-xs metionLegale">
             Mention légales
         </div>
-        <div class="col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-2 reseauSociaux">
+        <div class="col-sm-4 col-xs-5 bord col-xs-offset-1 reseauSociaux">
             Réseau sociaux
             <div>
                 <ul class = "list-unstyled list-inline hidden-xs">
