@@ -12,4 +12,11 @@ $(document).ready(function(){
     pagination: true
   });
 
+  // pagination admin responsive 
+  new List('list-responsive', {
+    valueNames: ['list'],
+    page: 10,
+    pagination: true
+  });
+
 });
