@@ -76,7 +76,10 @@ if (isset($_POST['valid'])) {
 ?>
 <div class="container">
     <div class="row">
-        <div class="page-header col-sm-6 col-sm-offset-3">
+        <div class="page-header col-sm-6 col-sm-offset-3 hidden-xs">
+            <h1 class="animated zoomInLeft text-center titre text-uppercase">Connection</h1>
+        </div>
+        <div class="page-header col-xs-12 hidden-sm hidden-md hidden-lg">
             <h1 class="animated zoomInLeft text-center titre text-uppercase">Connection</h1>
         </div>
     </div>
@@ -92,7 +95,7 @@ if (isset($_POST['valid'])) {
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 formulaireCo">
+        <div class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 formulaireCo">
             <form method="post" role="form" id="connection">
                 <div class="form-group float-label-control">
                     <label for="email">Email</label>

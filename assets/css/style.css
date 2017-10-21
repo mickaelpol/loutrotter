@@ -347,7 +347,7 @@ i {
     display: block;
     width: 40px;
     height: 40px;
-    background-color: #E1465A;
+    background: linear-gradient(195deg, #AB249A, #E14B64, #F9B961);
     position: absolute;
     transition: 0.5s;
 }
