@@ -135,3 +135,9 @@
 3. Regarder pour le design 
 
 >Objectif atteint :
+
+1. Configuration d'envoi d'email faite , manque l'hebergement
+2. Responsive en cours, 3 pages terminé
+3. Design en cours 
+
+--------------------------------------

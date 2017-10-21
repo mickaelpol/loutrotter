@@ -50,6 +50,7 @@ if (isset($_POST['valid'])) {
 
             // envoi de la requete
                 $message = '<div class="row"><p class="text-success text-center">L\'inscription à été validé ! cliquez <a href="?p=connection" >ici pour être re diriger directement</a></p></div>';
+                $loader = "<div id='loading' class='loader'></div>";
                 header('refresh:5;url=?p=connection');
 
             } else {
@@ -68,9 +69,14 @@ if (isset($_POST['valid'])) {
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 page-header">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-12 page-header">
             <h1 class="titre text-center animated zoomInRight">Inscription</h1>
-            <div class="text-danger text-center"><?= isset($message) ? $message: "" ?></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+            <div><?= isset($message) ? $message: "" ?></div>
+            <div><?= isset($loader) ? $loader: "" ?></div>
         </div>
     </div>
 </div>
@@ -78,21 +84,21 @@ if (isset($_POST['valid'])) {
 <p class='text-center text-danger' id="inputError"></p>
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 formulaireCo">
+        <div class="col-sm-12 col-xs-12 formulaireCo">
             <form method="post" action="?p=inscription" role="form" id="inscription">
-                <div class="col-sm-4 col-sm-offset-1">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="nom">Nom </label>
                         <input name="nom" id="nom" type="text" class="form-control" placeholder="Nom">
                     </div>
                 </div>
-                <div class="col-sm-4 col-sm-offset-2">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="prenom">prenom</label>
                         <input name="prenom" id="prenom" type="text" class="form-control" placeholder="Prenom">
                     </div>
                 </div>
-                <div class="col-sm-4 col-sm-offset-1">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="email">Email</label>
                         <input name="email" id="email" type="email" class="form-control" placeholder="Email">
@@ -100,7 +106,7 @@ if (isset($_POST['valid'])) {
                     </div>
                     <p class="text-danger" id="egalEmail"></p>
                 </div>
-                <div class="col-sm-4 col-sm-offset-2">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="emailVerif">Verification email</label>
                         <input name="emailVerif" id="emailVerif" type="email" class="form-control" placeholder="Verification email">
@@ -108,7 +114,7 @@ if (isset($_POST['valid'])) {
                     </div>
                     <p class="text-danger" id="egalEmail2"></p>
                 </div>
-                <div class="col-sm-4 col-sm-offset-1">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="password">Mot de passe</label>
                         <input name="password" id="password" type="password" class="form-control" placeholder="Mot de passe">
@@ -117,7 +123,7 @@ if (isset($_POST['valid'])) {
                     <p class="text-danger" id="egalMdp"></p>
                     <p class="text-danger" id="longMdp"></p>
                 </div>
-                <div class="col-sm-4 col-sm-offset-2">
+                <div class="col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1">
                     <div class="form-group float-label-control">
                         <label for="passwordVerif">Verification mot de passe</label>
                         <input name="passwordVerif" id="passwordVerif" type="password" class="form-control" placeholder="Verification mot de passe">
@@ -126,7 +132,7 @@ if (isset($_POST['valid'])) {
                     <p class="text-danger" id="egalMdp2"></p>
                     <p class="text-danger" id="longMdp2"></p>
                 </div>
-                <div class="col-sm-2 col-sm-offset-9">
+                <div class="col-sm-2 col-sm-offset-10 col-xs-8 col-xs-offset-3">
                     <div class="form-group">
                         <input type="submit" name="valid" class="btn btn-md btn-success pull-right">
                     </div>

@@ -45,7 +45,7 @@
         <div class="col-sm-offset-1 hidden-xs col-lg-8 col-lg-offset-2">
             <hr>
             <iframe src="https://snapwidget.com/embed/456871" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no"
-            style="border:none; overflow:hidden; width:750px; height:125px"></iframe>
+            style="border:none; overflow:hidden; width:600px; height:125px"></iframe>
             <hr>
         </div>
 </div>
