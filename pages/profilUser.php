@@ -5,19 +5,19 @@ if (!isset($_SESSION['nom'])) {
 }
 
 ?>
-<div class="container">
+<div class="container bord">
 	<div class="row">
-		<div class="col-sm-12">
+		<div class="col-lg-12 col-xs-12">
 			<h1 class="titre text-center text-uppercase animated zoomInRight">profil</h1>
 		</div>
 	</div>
 </div>
 
-<div class="container">
+<div class="container bord">
 	<div class="row">
 
 		<div class="row">
-			<div class="col-sm-12 margeErreur">
+			<div class="col-lg-12 col-xs-10 col-xs-offset-1 margeErreur">
 				<h3 class="text-center text-uppercase">
 					Modification du profil
 				</h3>
@@ -25,7 +25,7 @@ if (!isset($_SESSION['nom'])) {
 		</div>
 
 		<!-- Formulaire de changement du Nom Prenom Email -->
-		<div class="col-sm-4 col-sm-offset-4 formulaireCo">
+		<div class="col-lg-4 col-lg-offset-4 col-xs-10 col-xs-offset-1 formulaireCo">
 			<form method="post" action="?p=traitModifProfil" role="form" id="modifProfil">
 				<?php
 
@@ -58,7 +58,7 @@ if (!isset($_SESSION['nom'])) {
 		</div>
 
 		<div class="row">
-			<div class="col-sm-12 margeErreur">
+			<div class="col-lg-12 col-xs-10 col-xs-offset-1 margeErreur">
 				<h3 class="text-center text-uppercase">
 					changement de mot de passe
 				</h3>
@@ -66,14 +66,14 @@ if (!isset($_SESSION['nom'])) {
 		</div>
 
 		<!-- Formualaire de changement du mot de passe -->
-		<div class="col-sm-4 col-sm-offset-4 formulaireCo">
+		<div class="col-lg-4 col-lg-offset-4 col-xs-10 col-xs-offset-1 formulaireCo">
 			<form method="post" role="form" action="?p=traitModifProfil" id="modifPassword">
 				<div class="form-group float-label-control">
 					<label for="password">Mot de passe</label>
 					<input name="password" id="password" type="password" class="form-control"  placeholder="Mot de passe">
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-lg-12 col-xs-10 col-xs-offset-1">
 						<div class="margeErreur text-justify">
 							<!-- erreur des erreurs de l'inputs password -->
 							<p class="text-danger text-center" id="erreurPassword"></p>
@@ -89,7 +89,7 @@ if (!isset($_SESSION['nom'])) {
 					<input name="passwordVerif" id="passwordVerif" type="password" class="form-control"  placeholder="Verification du mot de passe">
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
+					<div class="col-lg-12 col-xs-10 col-xs-offset-1">
 						<div class="margeErreur text-justify">
 							<!-- stockage des erreurs de l'input verif -->
 							<p class="text-danger text-center" id="erreurPasswordVerif"></p>
@@ -108,13 +108,13 @@ if (!isset($_SESSION['nom'])) {
 				<!-- </div> -->
 			</div>
 			<div class="row">
-				<div class="col-sm-4 col-sm-offset-4 margeSupp">
+				<div class="col-lg-4 col-lg-offset-4 col-xs-10 col-xs-offset-1 margeSupp">
 					<!-- Trigger the modal with a button -->
 					<button type="button" class="btn btn-danger btn-lg pull-right" data-toggle="modal" data-target="#myModal">Supprimer le compte</button>
 				</div>
 
 				<!-- Modal -->
-				<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal fade col-xs-12" id="myModal" role="dialog">
 					<div class="modal-dialog">
 
 						<!-- Modal content-->
