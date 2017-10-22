@@ -16,8 +16,8 @@ else{
 
 
 
-<header class="page-header container text-center">
-    <h1 class='titre animated zoomInLeft col-sm-offset-4 col-sm-4'><?= $titre['con_nom'] ?></h1>
+<header class="container text-center">
+    <h1 class='page-header titre animated zoomInLeft col-lg-12'><?= $titre['con_nom'] ?></h1>
 </header>
 
 <?php
@@ -25,7 +25,7 @@ if (empty($result)) {
     ?>
     <div class="container">
         <div class="row ">
-            <div class="col-xs-4 col-xs-offset-4">
+            <div class="col-lg-4 col-lg-offset-4">
                 <h3 class="text-center animated zoomInLeft">Oops le Loutrotter n'a pas encore écrit d'article pour ce continent!</h3>
             </div>
         </div>
@@ -37,13 +37,13 @@ if (empty($result)) {
 <div class="container">
     <div id="test-list">
         <div class="row">
-            <div class="col-md-offset-2 col-md-8 list">
+            <div class="col-lg-offset-2 col-lg-8 list">
                 <?php foreach($result as $key=>$value):  ?>
-                    <div class="col-sm-12 jumbotron">
-                        <div class="col-sm-4">
+                    <div class="col-lg-12 col-xs-12 jumbotron">
+                        <div class="col-lg-4 col-xs-4">
                             <h2 class="text-capitalize shadowTxt"><u><?=  $value['pay_nom']; ?></u></h2>
                         </div>
-                        <div class="col-sm-4 col-sm-offset-4">
+                        <div class="col-lg-4 col-lg-offset-4 col-xs-4 col-xs-offset-4">
                             <p><a class="btn btn-info pull-right" href="?p=listeArt&pay=<?=  $value['pay_oid']; ?>">Découvrir</a></p>
                         </div>
                     </div>
