@@ -64,7 +64,7 @@ if (isset($_SESSION['admin'])) {
                   </div>
               </div>
             </form>
-            <li> <?= $btnUser ?></li>
+            <li><?= $btnUser ?></li>
             <li><?= $btnCo ?></li>
             <li><?= $btnAdmin ?></li>
           </ul>

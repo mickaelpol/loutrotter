@@ -20,14 +20,24 @@ body{
     text-shadow: 0px 0px 1px black;
 }
 
+
 .navbar, .navbar a {
     font-family: 'Hamurz', sans-serif;
     color:#A65E35;
     background: #CFEB00;
 }
+
+
+
+.navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+    background-color: rgba(166, 96, 42, 0.2);
+    border-bottom: 1px solid #fff;
+    border-radius: 20%;
+}
+
 .Logo {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
 
 footer a{
@@ -56,9 +66,6 @@ i {
     margin-top: 60px;
 }
 
-.bord {
-    border: 1px solid black;
-}
 .btn-danger:hover {
     box-shadow: 1px 3px 20px black;
 }

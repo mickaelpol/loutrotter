@@ -6,6 +6,7 @@
     <meta name="description" content="contenu de la description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/img/Logo_Loutrotter.png"/>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/police.css">
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="assets/css/mapglyphs-free-2.0/mapglyphs-free-2.0/mapglyphs/2.0/mapglyphs.css" rel="stylesheet">
     <!-- ////////////////////// BALISE TITLE A FINIR DE REMPLIR /////////////////////////// -->
-    <title>Loutrotter voyages partage découverte cuisine continent pays avion vol bateau </title>
+    <title>Loutrotter, voyages</title>
 </head>
 
 
