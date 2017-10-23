@@ -33,10 +33,9 @@
 <div class="container">
     <div class="text-center col-sm-offset-2 col-sm-8 col-xs-12">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eos vel inventore deserunt aliquam. Deleniti, aut quibusdam
-            praesentium consectetur, obcaecati recusandae quam magni
-            cum iusto error voluptatum enim itaque, corporis minus.
+        Bienvenue sur Loutrotter le site qui vous fait voyagé avec un sac à dos à travers le monde !
+        Ici vous trouverez les témoignages de nos voyages !
+        Alors rejoignez-nous ! 
         </p>
     </div>
 </div>
