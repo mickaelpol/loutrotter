@@ -104,7 +104,7 @@ i {
 }
 .shadowTxt {
     text-shadow: 0px 0px 1px #BEFF00;
-}   
+}
 
 .btn-success  {
     background-color: #BEFF00;
@@ -378,7 +378,7 @@ i {
 @media all and (max-width: 520px) {
     iframe{
         margin-left: 15px;
-        width: 300px; 
+        width: 300px;
         height:200px;
 
     }

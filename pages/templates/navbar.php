@@ -54,20 +54,20 @@ if (isset($_SESSION['admin'])) {
             <li><a href="?p=contact">Contact</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-          <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
-            <div class="input-group">
-              <input name="s" type="text" class="form-control" placeholder="Search">
-                <div class="input-group-btn">
-                    <button class="btn valider" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                </div>
-            </div>
-          </form>
+            <form class="navbar-form navbar-left" action="?p=recherche" method="POST">
+              <div class="input-group">
+                <input name="s" type="text" class="form-control" placeholder="Search">
+                  <div class="input-group-btn">
+                      <button class="btn valider" type="submit">
+                          <i class="glyphicon glyphicon-search"></i>
+                      </button>
+                  </div>
+              </div>
+            </form>
             <li> <?= $btnUser ?></li>
             <li><?= $btnCo ?></li>
             <li><?= $btnAdmin ?></li>
-        </ul>
+          </ul>
         </div>
       </nav>
 
@@ -81,8 +81,8 @@ if (isset($_SESSION['admin'])) {
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
               <span class="glyphicon glyphicon-th-list">
-              </button>
-            
+            </button>
+
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
                   <div class="col-xs-12">
