@@ -21,7 +21,7 @@ $form = "<form method='POST'>
 
 
 if (!isset($_SESSION['id'])) {
-    $form = "<h6>Connectez vous pour poster des comms</h6><form class='animated hinge' method='POST'>
+    $form = "<h6>Connectez vous pour poster des commentaires</h6><form class='animated hinge' method='POST'>
     <div class='form-group'>
     <label for='com'>Commentaire :</label>
     <textarea class='form-control' maxlength=255 name='commentaire' id='commentaire' cols='10' rows='5'></textarea>
@@ -37,7 +37,7 @@ if (isset($_POST['validCom'])) {
         $date = date('y-m-d');
         $sql = sprintf("insert into com_commentaire (com_art_oid, com_uti_oid, com_contenu, com_date)
             values (%d , %d, '%s' ,'%s')",$article_Id, $_SESSION['id'],$com, $date);
-        
+
         $bdd->query($sql);
         // traitement de la requetes
 
@@ -75,7 +75,7 @@ $reponse = $bdd->query($selecCom);
 
             </div>
             <div class="row">
-                <h3 class='titre text-right'> 
+                <h3 class='titre text-right'>
                 <?= !empty($result['art_contenu_monuments']) ? 'Monument<i class="fa fa-university" aria-hidden="true"></i>' : "" ?>
                 </h3>
                 <p class='text-right'>
@@ -118,9 +118,9 @@ $reponse = $bdd->query($selecCom);
 <div class="container espCom">
     <div id="test-list">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1 list jumbotron">
+            <div class="col-lg-10 col-lg-offset-1 col-xs-10 col-xs-offset-1 list">
                 <?php while($donnees = $reponse->fetch()){  ?>
-                <ul class="list-unstyled">
+                <ul class="list-unstyled jumbotron">
                     <li><h3><u><?= $donnees['uti_prenom'] ?></u></h3></li>
                     <?= $donnees['uti_oid'] === $_SESSION['id'] ? '<li class="text-right"> <a href="?p=supComArt&id='.$donnees["com_oid"].'&art='.$article_Id.'"><i class="fa fa-trash fa-2x"></i></a></li>' : '' ?>
                     <li><p class="com"><?= $donnees['com_contenu'] ?></p></li>
