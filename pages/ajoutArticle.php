@@ -18,7 +18,7 @@ if (!isset($_SESSION['admin'])) {
             <h4 id ='error' class="text-danger text-center"></h4>
     <br>
     <div class="row">
-        <div class="col-lg-offset-3 col-xs-offset-1 col-xs-10">
+        <div class="col-lg-offset-3 col-lg-9 col-xs-offset-1 col-xs-10">
             <form action="?p=traitement-ajout-article" method="post">
                 <div class="row">
                     <!-- Input titre de l'article -->
@@ -81,7 +81,7 @@ if (!isset($_SESSION['admin'])) {
                 <div class="row">
                     <!-- Bouton de soumission de formulaire -->
                     <div class="col-lg-offset-3 col-lg-3">
-                        <input id='valider' class="btn valider" type="submit" value="Valider">
+                        <input id='valider' class="btn btn-success valider" type="submit" value="Valider">
                     </div>
                 </div>
             </form>

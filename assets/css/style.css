@@ -76,7 +76,8 @@ i {
 
 .valider:focus, .valider:hover {
 	background: #CFEB00;
-	color: #A65E35;
+    color: #A65E35;
+    box-shadow: 1px 3px 20px black;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus  {
     background: #CFEB00;
@@ -134,7 +135,7 @@ i {
     background-color: #8dbc00;
     border: none;
     color: #834A1E;
-    box-shadow: 0px 0px 10px #000;
+    box-shadow: 0px 0px 20px #000;
 
 }
 
@@ -309,6 +310,12 @@ i {
 }
 .margeIco {
     margin-top: 10px;
+    overflow: none;
+}
+.navbar-collapse.in {
+    overflow: hidden;
+    max-height: none !important;
+    height: auto !important;
 }
 .social {
     position: relative;
