@@ -1,6 +1,6 @@
 <header class="container">
     <div class="row">
-        <div class="col-sm-12 col-xs-12 col-lg-6 col-lg-offset-2">
+        <div class="col-sm-12 col-xs-12 col-lg-6 col-lg-offset-3">
             <h1 class="titreAcc text-center hidden-xs hidden-md hidden-sm">
 
                 Lou Tr<img class="logoA" src="assets/img/Logo_Loutrotter.png" alt="Logo"/>tter
@@ -10,17 +10,17 @@
                 Lou Trotter
             </h1>
         </div>
-        <div class="col-lg-4 col-sm-4 col-xs-12 hidden-xs hidden-sm hidden-md">
+        <div class="col-lg-3 col-sm-4 col-xs-12 hidden-xs hidden-sm hidden-md">
             <div class="text-right">
                 <ul class = "list-unstyled list-inline conteneur">
 
-                    <li><a class="social" href="https://www.facebook.com/LouTrotterBlog"><img src="assets/img/Facebook_sfond.png" alt=""><div class="fond_face"></div></a></li>
+                    <li><a class="social" target="blank" href="https://www.facebook.com/LouTrotterBlog"><img src="assets/img/Facebook_sfond.png" alt=""><div class="fond_face"></div></a></li>
 
-                    <li><a class="social" href="https://twitter.com/Loutrotterblog"><img src="assets/img/Twitter_sfond.png" alt=""><div class="fond_twi"></div></a></li>
+                    <li><a class="social" target="blank" href="https://twitter.com/Loutrotterblog"><img src="assets/img/Twitter_sfond.png" alt=""><div class="fond_twi"></div></a></li>
 
-                    <li><a class="social" href="https://www.instagram.com/loutrotterblog/"><img src="assets/img/Instagram_sfond.png" alt=""><div class="fond_insta"></div></a></li>
+                    <li><a class="social" target="blank" href="https://www.instagram.com/loutrotterblog/"><img src="assets/img/Instagram_sfond.png" alt=""><div class="fond_insta"></div></a></li>
 
-                    <li><a class="social" href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw"><img src="assets/img/Youtube_sfond.png" alt=""><div class="fond_yout"></div></a></li>
+                    <li><a class="social" target="blank" href="https://www.youtube.com/channel/UCOeVJylPVlK0kWF-7HbZndw"><img src="assets/img/Youtube_sfond.png" alt=""><div class="fond_yout"></div></a></li>
 
                 </ul>
             </div>
@@ -31,7 +31,7 @@
 
 </header>
 <div class="container">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-12">
+    <div class="text-center col-sm-offset-2 col-sm-8 col-xs-12">
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Eos vel inventore deserunt aliquam. Deleniti, aut quibusdam
