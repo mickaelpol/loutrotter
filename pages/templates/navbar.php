@@ -13,7 +13,7 @@ if (isset($_SESSION['admin'])) {
 
 <div class="row">
 
-      <nav class="hidden-xs navbar navbar-fixed-top">
+      <nav class="hidden-xs navbar navbar-fixed-top mainBanniere">
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
