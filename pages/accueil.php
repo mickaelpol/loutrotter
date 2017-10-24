@@ -10,7 +10,7 @@
                 Lou Trotter
             </h1>
         </div>
-        <div class="col-lg-3 col-sm-4 col-xs-12 hidden-xs hidden-sm hidden-md">
+        <div class="col-lg-3 col-sm-4 col-sm-offset-4 col-xs-12 hidden-xs  hidden-md">
             <div class="text-right">
                 <ul class = "list-unstyled list-inline conteneur">
 

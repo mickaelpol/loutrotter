@@ -6,9 +6,9 @@ body{
     padding: 0;
 }
 .mainBanniere {
-    background: url("../img/banniere_loutrotter.jpeg");
+    background: url("../img/banner.png");
     background-size: cover;
-    background-position: 100%;
+    background-position: bottom left;
 }
 
 .titre {
@@ -24,9 +24,14 @@ body{
     color: #CFEB00;
     text-shadow: 0px 0px 1px black;
 }
+.navbar {
+    font-family: 'Hamurz', sans-serif;
+    color:#A65E35;
+    height: 100px;
+}
 
 
-.navbar, .navbar a {
+.navbar a {
     font-family: 'Hamurz', sans-serif;
     color:#A65E35;
 }
@@ -320,7 +325,11 @@ i {
     overflow: hidden;
     max-height: none !important;
     height: auto !important;
+} 
+.conteneur {
+    margin-top: 60px;
 }
+
 .social {
     position: relative;
     background-color: rgba(0, 0, 0, 0.2);
