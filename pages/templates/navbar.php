@@ -16,7 +16,7 @@ if (isset($_SESSION['admin'])) {
       <nav class="hidden-xs navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#">
+            <a class="navbar-brand dropdown-toggle" data-toggle="dropdown" href="#" id="linkNav">
               <span class="glyphicon glyphicon-th-list"></span>
             </a>
 
