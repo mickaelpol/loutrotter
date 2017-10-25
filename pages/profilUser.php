@@ -49,7 +49,7 @@ if (!isset($_SESSION['nom'])) {
 					</div>
 					<p class="text-danger text-center" id="erreurMail"></p>
 					<div class="form-group">
-						<input type="submit" name="validForm" class="btn btn-md btn-success pull-right">
+						<input type="submit" name="validForm" class="btn btn-md valider pull-right">
 					</div>
 					<?php
 				}
@@ -102,7 +102,7 @@ if (!isset($_SESSION['nom'])) {
 
 				<!-- Bouton pour valider le changement du mot de passe -->
 				<div class="form-group">
-					<input type="submit" name="validPass" class="btn btn-md btn-success pull-right">
+					<input type="submit" name="validPass" class="btn btn-md valider pull-right">
 				</div>
 			</form>
 			<!-- <div class="container"> -->

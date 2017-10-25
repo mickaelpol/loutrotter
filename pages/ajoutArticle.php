@@ -81,7 +81,7 @@ if (!isset($_SESSION['admin'])) {
                 <div class="row">
                     <!-- Bouton de soumission de formulaire -->
                     <div class="col-lg-offset-3 col-lg-3">
-                        <input id='valider' class="btn btn-success valider" type="submit" value="Valider">
+                        <input id='valider' class="btn valider" type="submit" value="Valider">
                     </div>
                 </div>
             </form>

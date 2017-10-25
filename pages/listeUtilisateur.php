@@ -24,10 +24,10 @@ if (!isset($_SESSION['admin'])) {
             <table class="table table-bordered table-stripped table-hover">
                 <thead>
                     <tr>
-                        <th class="valider text-center col-lg-3">Nom</th>
-                        <th class="valider text-center col-lg-3">Prénom</th>
-                        <th class="valider text-center col-lg-4">Adresse email</th>
-                        <th class="valider text-center col-lg-2">BAN / UNBANN</th>
+                        <th class="colorNav text-center col-lg-3">Nom</th>
+                        <th class="colorNav text-center col-lg-3">Prénom</th>
+                        <th class="colorNav text-center col-lg-4">Adresse email</th>
+                        <th class="colorNav text-center col-lg-2">BAN / UNBANN</th>
                     </tr>
                 </thead>
                 <tbody>

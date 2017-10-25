@@ -20,7 +20,7 @@ if (isset($_SESSION['admin'])) {
               <span class="glyphicon glyphicon-th-list"></span>
             </a>
 
-            <ul class="dropdown-menu list-inline valider nav navbar-nav animated fadeInLeft">
+            <ul class="dropdown-menu list-inline colorNav nav navbar-nav animated fadeInLeft" id="navbar-collapse">
               <div class="col-sm-2 text-center text-uppercase cont">
                 <li><a href="?p=listPays&cont=5">Europe</a></li>
               </div>
@@ -58,7 +58,7 @@ if (isset($_SESSION['admin'])) {
               <div class="input-group">
                 <input name="s" type="text" class="form-control" placeholder="Search">
                   <div class="input-group-btn">
-                      <button class="btn valider" type="submit">
+                      <button class="btn colorNav" type="submit">
                           <i class="glyphicon glyphicon-search"></i>
                       </button>
                   </div>
@@ -90,7 +90,7 @@ if (isset($_SESSION['admin'])) {
                       <div class="input-group">
                         <input name="s" type="text" class="form-control" placeholder="Search">
                         <div class="input-group-btn">
-                          <button class="btn valider" type="submit">
+                          <button class="btn" type="submit">
                             <i class="glyphicon glyphicon-search"></i>
                           </button>
                         </div>
@@ -132,3 +132,7 @@ if (isset($_SESSION['admin'])) {
           </div>
         </nav>
       </div>
+
+
+
+

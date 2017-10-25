@@ -119,20 +119,19 @@ i {
     border: none;
     color: #A6602A;
 }
-.btn-success:hover, .btn-success:focus {
-    background-color: #ADE602;
-    border: none;
-    color: #834A1E;
-    box-shadow: 1px 3px 20px #000;
+.colorNav {
+    background: #CFEB00;
+    color:#A65E35;
 }
+
 .btn-info {
-    background-color: #a9d81a;
+    background-color: #A6DF00;
     border: 1px solid #A6602A;
     color: #A6602A;
     margin-top: 25px;
 }
 .btn-info:hover, .btn-info:focus {
-    background-color: #8dbc00;
+    background-color: #80aa00;
     border: none;
     color: #834A1E;
     box-shadow: 0px 0px 20px #000;

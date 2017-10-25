@@ -51,7 +51,7 @@ if (empty($result)) {
             </div>
         </div>
         <div class="text-center">
-            <ul class="pagination valider"></ul>
+            <ul class="pagination colorNav"></ul>
         </div>
     </div>
 </div>

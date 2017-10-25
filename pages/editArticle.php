@@ -24,7 +24,7 @@ $donnees = $reponse->fetch();
     <h4 id ='error' class="text-danger text-center"></h4>
     <br>
     <div class="row">
-        <div class="col-lg-offset-2 col-xs-12">
+        <div class="col-lg-offset-3 col-lg-9 col-xs-12">
             <form action="?p=update-article" method="post">
                 <input type="number" class="hidden" name="article_id" value="<?= $donnees['art_oid'] ?>">
                 <div class="row">

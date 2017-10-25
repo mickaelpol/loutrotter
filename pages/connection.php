@@ -106,7 +106,7 @@ if (isset($_POST['valid'])) {
                 </div>
                 <p id='erreur2'></p>
                 <div class="form-group">
-                    <input type="submit" name="valid" class="btn btn-md btn-success pull-right">
+                    <input type="submit" name="valid" class="btn btn-md valider pull-right">
                 </div>
             </form>
         </div>

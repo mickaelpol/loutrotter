@@ -134,7 +134,7 @@ if (isset($_POST['valid'])) {
                 </div>
                 <div class="col-sm-2 col-sm-offset-10 col-xs-8 col-xs-offset-3">
                     <div class="form-group">
-                        <input type="submit" name="valid" class="btn btn-md btn-success pull-right">
+                        <input type="submit" name="valid" class="btn btn-md valider pull-right">
                     </div>
                 </div>
             </form>
