@@ -20,13 +20,13 @@ if (!isset($_SESSION['admin'])) {
     <br>
     <div class="row text-center ">
         <div class="col-lg-offset-2 col-lg-2  col-xs-12"><br>
-            <a href="?p=ajout-article" class="btn btn-success valider"><i class="fa fa-pencil-square-o"></i> Creer un article</a>
+            <a href="?p=ajout-article" class="btn valider"><i class="fa fa-pencil-square-o"></i> Creer un article</a>
         </div>
         <div class="col-lg-offset-1 col-lg-2  col-xs-12"><br>
-            <a href="?p=addPays" class="btn btn-success valider"><i class="fa fa-globe"></i> Ajouter un pays</a>
+            <a href="?p=addPays" class="btn colorNav valider"><i class="fa fa-globe"></i> Ajouter un pays</a>
         </div>
         <div class="col-lg-offset-1 col-lg-2  col-xs-12"><br>
-            <a href="?p=listeUsr" class="btn btn-success valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
+            <a href="?p=listeUsr" class="btn colorNav valider"><i class="fa fa-users"></i> Liste des utilisateurs</a>
         </div>
     </div>
     <div class="row">
@@ -38,11 +38,11 @@ if (!isset($_SESSION['admin'])) {
             <table class="table table-striped table-bordered">
                 <thead>
                     <tr>
-                        <th class="valider text-center col-lg-7">Titre de l'article</th>
-                        <th class="valider text-center col-lg-2">Pays</th>
-                        <th class="valider text-center col-lg-1">Liste des commentaires</th>
-                        <th class="valider text-center col-lg-1">Editer l'article</th>
-                        <th class="valider text-center col-lg-1">Supprimer l'article</th>
+                        <th class="colorNav text-center col-lg-7">Titre de l'article</th>
+                        <th class="colorNav text-center col-lg-2">Pays</th>
+                        <th class="colorNav text-center col-lg-1">Liste des commentaires</th>
+                        <th class="colorNav text-center col-lg-1">Editer l'article</th>
+                        <th class="colorNav text-center col-lg-1">Supprimer l'article</th>
                     </tr>
                 </thead>
                 <tbody>
